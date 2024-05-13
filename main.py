@@ -22,15 +22,32 @@ grid = [[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]]
 
 
 # Input:
-date1 = "2020-01-15"
-date2 = "2019-12-31"
-# Output: 1
+# date1 = "2020-01-15"
+# date2 = "2019-12-31"
+# # Output: 1
 
-from datetime import datetime   
+# from datetime import datetime   
 
-dt1 =datetime.strptime(date1,"%Y-%m-%d")
-dt2 =datetime.strptime(date2,"%Y-%m-%d")
+# dt1 =datetime.strptime(date1,"%Y-%m-%d")
+# dt2 =datetime.strptime(date2,"%Y-%m-%d")
 
-delay_time =abs(dt2 - dt1) 
+# delay_time =abs(dt2 - dt1) 
 
-print(delay_time.days)
+# print(delay_time.days) 
+
+
+# Input: 
+nums = [1,3,4,2,2]
+# Output: 2
+p={}
+for i in nums: 
+    if i in p: 
+        p[i]+=1  
+    else : 
+        p[i] =1   
+print(p)  
+
+for key,value in p.items(): 
+    if value>1: 
+        print(key)
+    
