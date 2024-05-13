@@ -71,3 +71,15 @@ matrix = [[3,7,8],[9,11,13],[15,16,17]]
 # Output: [15]
 # Explanation: 15 is the only lucky number since it is the minimum in its row and the maximum in its column. 
 
+zipped_matrix = [list(row) for row in zip(*matrix)]
+print(zipped_matrix)
+k=[]
+k2=[]
+for i in zipped_matrix: 
+    k.append(max(i)) 
+print(k)   
+for i in matrix: 
+    k2.append(min(i)) 
+print(k2)  
+
+print([*set(k).intersection(set(k2))]) 
