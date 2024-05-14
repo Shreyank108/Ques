@@ -213,5 +213,46 @@ grid = [[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]]
 #     l.append(nums[1]+nums[i+1]) 
 #     i+=1  
 # print(l) 
+
+# Input: 
+# n = 5
+# start = 0
+# Output: 8
+# Explanation: Array nums is equal to [0, 2, 4, 6, 8] where (0 ^ 2 ^ 4 ^ 6 ^ 8) = 8.
+# Where "^" corresponds to bitwise XOR operator. 
+# l=[]
+
+# for i in range(start,start + n*2,2): 
+#     l.append(i)      
+# print(l)
+# result =0   
+# for i in l: 
+#     result ^=i           
+# print(result)
     
+    
+    
+# def isPathCrossing(path):
+#     visited = {(0, 0)}  
+#     x, y = 0, 0
+
+#     for direction in path:
+#         if direction == 'N':
+#             y += 1
+#         elif direction == 'S':
+#             y -= 1
+#         elif direction == 'E':
+#             x += 1
+#         elif direction == 'W':
+#             x -= 1
+
+#         if (x, y) in visited:
+#             return True
+#         visited.add((x, y))
+
+#     return False
+
+# print(isPathCrossing("NES"))  
+# print(isPathCrossing("NESWW")) 
+
       
