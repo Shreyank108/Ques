@@ -67,19 +67,55 @@ grid = [[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]]
 
 
 # Input: 
-matrix = [[3,7,8],[9,11,13],[15,16,17]]
-# Output: [15]
-# Explanation: 15 is the only lucky number since it is the minimum in its row and the maximum in its column. 
+# matrix = [[3,7,8],[9,11,13],[15,16,17]]
+# # Output: [15]
+# # Explanation: 15 is the only lucky number since it is the minimum in its row and the maximum in its column. 
 
-zipped_matrix = [list(row) for row in zip(*matrix)]
-print(zipped_matrix)
-k=[]
-k2=[]
-for i in zipped_matrix: 
-    k.append(max(i)) 
-print(k)   
-for i in matrix: 
-    k2.append(min(i)) 
-print(k2)  
+# zipped_matrix = [list(row) for row in zip(*matrix)]
+# print(zipped_matrix)
+# k=[]
+# k2=[]
+# for i in zipped_matrix: 
+#     k.append(max(i)) 
+# print(k)   
+# for i in matrix: 
+#     k2.append(min(i)) 
+# print(k2)  
 
-print([*set(k).intersection(set(k2))]) 
+# print([*set(k).intersection(set(k2))]) 
+
+
+# # Input: 
+# arr = [2,2,3,4]
+# # Output: 2
+# p={} 
+# for i in arr: 
+#     if i in p: 
+#        p[i]+=1  
+#     else : 
+#         p[i]=1  
+# print(p) 
+# l=[]
+# m=0
+# for key,value in p.items(): 
+#     if key == value : 
+#         l.append(key)  
+#     else:
+#         m=-1
+
+# if m==0: 
+#     print(max(l))  
+# else : 
+#     print(-1)
+
+
+
+# Input: 
+# words = ["mass","as","hero","superhero"]
+# Output: ["as","hero"]
+# substring =[] 
+# for i in range(len(words)): 
+#     for j in range(len(words)): 
+#         if i != j and words[i] in words[j]: 
+#             substring.append(words[i]) 
+# print(substring)
