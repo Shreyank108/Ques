@@ -119,3 +119,23 @@ grid = [[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]]
 #         if i != j and words[i] in words[j]: 
 #             substring.append(words[i]) 
 # print(substring)
+
+# Input: 
+nums = [1,0,0,0,1,0,0,1] 
+k = 2
+# Output: true
+# Explanation: Each of the 1s are at least 2 places away from each other. 
+l=[]
+for i in range(len(nums)): 
+    if nums[i]==1: 
+        l.append(i) 
+print(l)
+differences = []
+
+for i in range(0,len(l)-1):
+    diff = l[i + 1] - l[i]
+    differences.append(diff)
+
+differences.append(-l[-1])
+
+print(differences)
