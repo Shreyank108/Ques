@@ -121,21 +121,97 @@ grid = [[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]]
 # print(substring)
 
 # Input: 
-nums = [1,0,0,0,1,0,0,1] 
-k = 2
-# Output: true
-# Explanation: Each of the 1s are at least 2 places away from each other. 
-l=[]
-for i in range(len(nums)): 
-    if nums[i]==1: 
-        l.append(i) 
-print(l)
-differences = []
+# nums = [1,0,0,0,1,0,0,1] 
+# k = 2
+# # Output: true
+# # Explanation: Each of the 1s are at least 2 places away from each other. 
+# l=[]
+# for i in range(len(nums)): 
+#     if nums[i]==1: 
+#         l.append(i) 
+# print(l)
+# differences = []
 
-for i in range(0,len(l)-1):
-    diff = l[i + 1] - l[i]
-    differences.append(diff)
+# for i in range(0,len(l)-1):
+#     diff = l[i + 1] - l[i]
+#     differences.append(diff)
 
-differences.append(-l[-1])
+# differences.append(-l[-1])
 
-print(differences)
+# print(differences)
+
+# Input: 
+# s = "abbcccddddeeeeedcba"
+# # Output: 5
+# l=[]
+# for i in s : 
+#    l.append(i) 
+# print(l)  
+# count  =0
+# for i in range(len(l)-1): 
+#         if l[i] == l[i+1] : 
+#             count +=1  
+# print(count)    
+
+
+# Input:
+# target = [1,2,3,4]
+# arr = [2,4,1,3]
+# # Output: true 
+
+# target.sort()  
+# arr.sort()
+# print(target) 
+# print(arr) 
+# if target == arr : 
+#     print(True) 
+# else : 
+#     print(False)
+
+
+# Input:
+# nums = [3,4,5,2]
+# Output: 12 
+# Explanation: If you choose the indices i=1 and j=2 
+# (indexed from 0), you will get the maximum value, that is, 
+# (nums[1]-1)*(nums[2]-1) = (4-1)*(5-1) = 3*4 = 12.  
+
+# nums.sort(reverse=True) 
+# print(nums)
+# print((nums[0]-1) * (nums[1]-1))
+
+
+
+# Input:
+# nums = [2,5,1,3,4,7]
+# n = 3
+# # Output: [2,3,5,4,1,7] 
+# # Explanation: Since x1=2, x2=5, x3=1, y1=3, y2=4, y3=7 then the answer is [2,3,5,4,1,7]. 
+# l=[] 
+# m=[] 
+# k=[]
+# for i in range(n): 
+#     l.append(nums[i]) 
+# print(l) 
+# for i in range(n,len(nums)): 
+#     m.append(nums[i]) 
+# print(m)
+# i=0 
+# while len(k) != len(nums): 
+#     k.append(l[i])
+#     k.append(m[i])
+#     i+=1
+# print(k)
+
+# Input: 
+# nums = [1,2,3,4]
+# # Output: [1,3,6,10]
+# # Explanation: Running sum is obtained as follows: [1, 1+2, 1+2+3, 1+2+3+4].
+# l=[]
+# i=0   
+# while len(l) != len(nums)-1 : 
+#     l.append(nums[1]+nums[i+1]) 
+#     i+=1  
+# print(l) 
+    
+      
