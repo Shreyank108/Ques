@@ -255,4 +255,60 @@ grid = [[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]]
 # print(isPathCrossing("NES"))  
 # print(isPathCrossing("NESWW")) 
 
-      
+
+
+# Input: 
+# arr = [1,2,4]
+# Output: true
+# Explanation: We can reorder the elements as [1,3,5]
+# or [5,3,1] with differences 2 and -2 respectively, between each consecutive elements. 
+# arr.sort(reverse=True)
+# l=[] 
+# print(arr)
+# for i in range(len(arr)-1): 
+#     l.append(arr[i]-arr[i+1]) 
+# print(l) 
+# flag =0
+# p={} 
+# for i in l: 
+#     if i in p: 
+#         p[i]+=1 
+#     else : 
+#         p[i]=1  
+# if len(p) ==1 : 
+#     print(True) 
+# else : 
+#     print(False) 
+
+# Input: 
+date = "20th Oct 2052"
+# Output: "2052-10-20"
+p=date.split(" ") 
+months={
+    "Jan" :1 ,
+    "Feb":2,
+    "Mar":3, 
+    "Apr":4,
+    "May":5,
+    "Jun":6,
+    "Jul":7,
+    "Aug":8,
+    "Sep":9,
+    "Oct":10,
+    "Nov":11,
+    "Dec":12}
+print(p)
+val=0
+for key,value in months.items(): 
+    if key == p[1]: 
+        val+=value 
+print(val) 
+d_p=[]
+for i in p[0]: 
+    d_p.append(i) 
+print(d_p) 
+d_p=d_p[:-2] 
+join_d_p= "".join(d_p) 
+print(join_d_p) 
+
+
