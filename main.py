@@ -280,35 +280,50 @@ grid = [[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]]
 # else : 
 #     print(False) 
 
+
+
 # Input: 
-date = "20th Oct 2052"
-# Output: "2052-10-20"
-p=date.split(" ") 
-months={
-    "Jan" :1 ,
-    "Feb":2,
-    "Mar":3, 
-    "Apr":4,
-    "May":5,
-    "Jun":6,
-    "Jul":7,
-    "Aug":8,
-    "Sep":9,
-    "Oct":10,
-    "Nov":11,
-    "Dec":12}
-print(p)
-val=0
-for key,value in months.items(): 
-    if key == p[1]: 
-        val+=value 
-print(val) 
-d_p=[]
-for i in p[0]: 
-    d_p.append(i) 
-print(d_p) 
-d_p=d_p[:-2] 
-join_d_p= "".join(d_p) 
-print(join_d_p) 
+# date = "20th Oct 2052"
+# # Output: "2052-10-20"
+# p=date.split(" ") 
+# months={
+#     "Jan" :1 ,
+#     "Feb":2,
+#     "Mar":3, 
+#     "Apr":4,
+#     "May":5,
+#     "Jun":6,
+#     "Jul":7,
+#     "Aug":8,
+#     "Sep":9,
+#     "Oct":10,
+#     "Nov":11,
+#     "Dec":12}
+# print(p)
+# val=0
+# for key,value in months.items(): 
+#     if key == p[1]: 
+#         val+=value 
+# print(val) 
+# d_p=[]
+# for i in p[0]: 
+#     d_p.append(i) 
+# print(d_p) 
+# d_p=d_p[:-2] 
+# join_d_p= "".join(d_p) 
+# print(join_d_p) 
+
+
+# Input: 
+low = 8
+high = 10
+# Output: 3
+# Explanation: The odd numbers between 3 and 7 are [3,5,7]. 
+count  =0  
+for i in range(low,high+1): 
+    if i%2 !=0 : 
+        print(i)
+        count +=1 
+print(count)
 
 
