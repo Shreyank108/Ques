@@ -390,3 +390,16 @@ n = 1345987
 # # Replace commas with dots
 # result = formatted_str.replace(',', '.')
 # print(result)
+
+# Input: 
+s = "?zs"
+# Output: "azs" 
+l=['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
+   'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+p=[]
+for i in l: 
+    if i not in s: 
+        p.append(i) 
+print(p)  
+m=s.replace('?',p[0])   
+print(m)
