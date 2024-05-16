@@ -418,4 +418,45 @@ n = 1345987
 # sum=0 
 # for i in arr: 
 #     sum+=i   
-# print(sum/len)
+# print(sum/len) 
+
+# Input: 
+# s = "abca"
+# # Output: 2
+# # Explanation: The optimal substring here is "bc". 
+# l=[]
+# for i in s: 
+#     l.append(i) 
+# print(l)
+# p={} 
+# for i in l: 
+#     if i in p: 
+#         p[i]+=1 
+#     else : 
+#         p[i]=1 
+# print(p) 
+# key= 0
+# for key,value in p.items(): 
+#     if value ==2: 
+#         key+=key
+
+
+
+# Input: 
+# nums = [1,1,2,2,2,3]
+# # Output: [3,1,1,2,2,2]
+# # Explanation: '3' has a frequency of 1, '1' has a frequency of 2, and '2' has a frequency of 3.    
+# p={}
+# for i in nums: 
+#    if i in p: 
+#        p[i]+=1 
+#    else : 
+#        p[i] =1 
+# print(p)  
+# l=[] 
+# for key,value in p.items(): 
+#     l.append(value) 
+# l.sort() 
+# print(l) 
+# for i in l: 
+    
