@@ -392,14 +392,30 @@ n = 1345987
 # print(result)
 
 # Input: 
-s = "?zs"
-# Output: "azs" 
-l=['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
-   'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-p=[]
-for i in l: 
-    if i not in s: 
-        p.append(i) 
-print(p)  
-m=s.replace('?',p[0])   
-print(m)
+# s = "?zs"
+# # Output: "azs" 
+# l=['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
+#    'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+# p=[]
+# for i in l: 
+#     if i not in s: 
+#         p.append(i) 
+# print(p)  
+# m=s.replace('?',p[0])   
+# print(m)
+
+# Input: 
+# s = "()(())((()()))" 
+
+
+
+# arr = [6,0,7,0,7,5,7,8,3,4,0,7,8,1,6,8,1,1,2,4,8,1,9,5,4,3,8,5,10,8,6,6,1,0,6,10,8,2,3,4]
+# Max = max(arr)
+# Min = min(arr) 
+# arr.remove(Max)
+# arr.remove(Min) 
+# len=len(arr) 
+# sum=0 
+# for i in arr: 
+#     sum+=i   
+# print(sum/len)
