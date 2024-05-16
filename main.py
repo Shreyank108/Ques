@@ -460,3 +460,20 @@ n = 1345987
 # print(l) 
 # for i in l: 
     
+# Input: 
+# s = "daabcbaabcbc"
+# part = "abc"
+# # Output: "dab" 
+# p=""
+# for i in s:
+#     if part in s: 
+#         p=s.replace(part,"") 
+# print(p)
+
+# Input: 
+s = "abbaca"
+# Output: "ca" 
+i=0
+while s[i]==s[i+1]:  
+    s.replace()
+    i+=1
