@@ -315,15 +315,78 @@ grid = [[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]]
 
 
 # Input: 
-low = 8
-high = 10
-# Output: 3
-# Explanation: The odd numbers between 3 and 7 are [3,5,7]. 
-count  =0  
-for i in range(low,high+1): 
-    if i%2 !=0 : 
-        print(i)
-        count +=1 
-print(count)
+# low = 8
+# high = 10
+# # Output: 3
+# # Explanation: The odd numbers between 3 and 7 are [3,5,7]. 
+# count  =0  
+# for i in range(low,high+1): 
+#     if i%2 !=0 : 
+#         print(i)
+#         count +=1 
+# print(count)
 
 
+# Input: 
+# arr = [1,2,34,3,4,5,7,23,12]
+# Output: true
+# Explanation: [5,7,23] are three consecutive odds.
+
+
+# Input: 
+# nums = [1,1,2,3,3,4,4,8,8]
+# Output: 2 
+# p={}
+# for i in nums: 
+#     if i in p: 
+#         p[i]+=1 
+#     else : 
+#         p[i]=1  
+# print(p) 
+# for key,value in p.items(): 
+#     if value==1: 
+#         print(key)
+
+# result =0  
+# for i in nums: 
+#     result^=i     
+# print(result)
+
+# Input: 
+# arr = [2,6,4,1]
+# Output: false
+# Explanation: There are no three consecutive odds.
+
+# for i in range(len(arr)-2): 
+#     if arr[i]%2!=0 and arr[i+1]%2!=0 and arr[i+2]%2!=0 : 
+#         print("true") 
+#     else : 
+#         print("false")
+
+# def threeConsecutiveOdds(arr):
+#     # Iterate through the array up to the third-last element
+#     for i in range(len(arr) - 2):
+#         # Check if the current element and the next two elements are all odd
+#         if arr[i] % 2 != 0 and arr[i+1] % 2 != 0 and arr[i+2] % 2 != 0:
+#             return True
+#     return False
+
+# # Example test cases
+# print(threeConsecutiveOdds([2, 6, 4, 1]))  # Output: False
+# print(threeConsecutiveOdds([1, 2, 34, 3, 4, 5, 7, 23, 12]))  # Output: True
+
+
+# Example 1:
+# Input: 
+n = 1345987
+# Output: "987"
+# Example 2:
+
+# Input: n = 1234
+# Output: "1.234" 
+
+# formatted_str = '{:,}'.format(n) 
+# print(formatted_str)
+# # Replace commas with dots
+# result = formatted_str.replace(',', '.')
+# print(result)
