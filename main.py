@@ -509,14 +509,57 @@ n = 1345987
 
 
 # Input: 
-sequence = "aaabaaaabaaabaaaabaaaabaaaabaaaaba"
-word = "aaaba"
+# sequence = "aaabaaaabaaabaaaabaaaabaaaabaaaaba"
+# word = "aaaba"
 
-count = 0
-index = sequence.find(word)
+# count = 0
+# index = sequence.find(word)
 
-while index != -1:
-    count += 1
-    index = sequence.find(word, index + 1)
+# while index != -1:
+#     count += 1
+#     index = sequence.find(word, index + 1)
 
-print(count) 
+# print(count) 
+
+# Input: 
+accounts = [[1,2,3],[3,2,1]]
+# Output: 6
+# Explanation:
+# 1st customer has wealth = 1 + 2 + 3 = 6
+# 2nd customer has wealth = 3 + 2 + 1 = 6
+# Both customers are considered the richest with a wealth of 6 each, so return 6.
+# l=[] 
+# for i in accounts: 
+#    l.append(sum(i)) 
+# print(max(l)) 
+
+# OR   
+
+# accounts = [[1,2,3],[3,2,1]] 
+# l=[] 
+# for i in accounts: 
+#     count =0  
+#     for j in i: 
+#         count+=j   
+#         l.append(count) 
+# print(l)
+# print(max(l)) 
+
+
+# Input: 
+# command = "G()()()()(al)"
+# # Output: "Gooooal"
+# p=command.replace("()",'o').replace('(al)','al')
+# print(p)
+
+# Input: 
+allowed = "ab"
+words = ["ad","bd","aaab","baa","badab"]
+# Output: 2 
+count =0
+for i in allowed: 
+    print(i)
+    for j in words: 
+        if i in j:
+            count +=1 
+print(count)
