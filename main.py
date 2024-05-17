@@ -471,9 +471,52 @@ n = 1345987
 # print(p)
 
 # Input: 
-s = "abbaca"
-# Output: "ca" 
-i=0
-while s[i]==s[i+1]:  
-    s.replace()
-    i+=1
+# s = "abbaca"
+# # Output: "ca" 
+# i=0
+# while s[i]==s[i+1]:  
+#     s.replace()
+#     i+=1 
+
+# Input: 
+# arr = [15,88]
+# pieces = [[88],[15]]
+# # Output: true
+# # Explanation: Concatenate [15] then [88] 
+# count =0
+# l=[]
+# for i in str(pieces): 
+#     l.append(i) 
+# for i in l: 
+#     if '[' == i: 
+#         count +=1 
+# if count >= len(arr): 
+#     print(True) 
+# else : 
+#     print(False)
+
+
+# Input: 
+# word1 = ["ab", "c"]
+# word2 = ["a", "bc"] 
+
+# word_parse="".join(word1)
+# word_parse2="".join(word2)  
+# if word_parse == word_parse2 : 
+#     print(True) 
+# else : 
+#     print(False)
+
+
+# Input: 
+sequence = "aaabaaaabaaabaaaabaaaabaaaabaaaaba"
+word = "aaaba"
+
+count = 0
+index = sequence.find(word)
+
+while index != -1:
+    count += 1
+    index = sequence.find(word, index + 1)
+
+print(count) 
