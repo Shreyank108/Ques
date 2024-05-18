@@ -553,13 +553,45 @@ accounts = [[1,2,3],[3,2,1]]
 # print(p)
 
 # Input: 
-allowed = "ab"
-words = ["ad","bd","aaab","baa","badab"]
-# Output: 2 
-count =0
-for i in allowed: 
-    print(i)
-    for j in words: 
-        if i in j:
-            count +=1 
-print(count)
+# allowed = "ab"
+# words = ["ad","bd","aaab","baa","badab"]
+# # Output: 2 
+# count =0
+# for i in allowed: 
+#     print(i)
+#     for j in words: 
+#         if i in j:
+#             count +=1 
+# print(count)
+
+
+
+# Input: 
+nums = [1,2,3]
+# Output: true
+# Explanation: [1,2,3,4,5] is the original sorted array.
+# You can rotate the array by x = 3 positions to begin on the the element of value 3: [3,4,5,1,2]. 
+p=nums[:]
+print(p)
+nums.sort() 
+print(nums) 
+#[1,2,3,4,5]
+#[3,4,5,1,2]  
+l=[] 
+for _ in range (len(nums)):
+    last_elem=nums[-1] 
+    for i in range(len(nums)-1,0,-1):  
+        nums[i]=nums[i-1] 
+    nums[0]=last_elem  
+    l.append(nums[:]) 
+print(l) 
+flag=False
+for i in l: 
+    if i== p: 
+        flag =True
+        break
+if flag ==True: 
+    print(True) 
+else : 
+    print(False)
+
