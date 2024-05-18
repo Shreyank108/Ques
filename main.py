@@ -567,31 +567,60 @@ accounts = [[1,2,3],[3,2,1]]
 
 
 # Input: 
-nums = [1,2,3]
-# Output: true
-# Explanation: [1,2,3,4,5] is the original sorted array.
-# You can rotate the array by x = 3 positions to begin on the the element of value 3: [3,4,5,1,2]. 
-p=nums[:]
-print(p)
-nums.sort() 
-print(nums) 
-#[1,2,3,4,5]
-#[3,4,5,1,2]  
-l=[] 
-for _ in range (len(nums)):
-    last_elem=nums[-1] 
-    for i in range(len(nums)-1,0,-1):  
-        nums[i]=nums[i-1] 
-    nums[0]=last_elem  
-    l.append(nums[:]) 
-print(l) 
-flag=False
-for i in l: 
-    if i== p: 
-        flag =True
-        break
-if flag ==True: 
-    print(True) 
-else : 
-    print(False)
+# nums = [1,2,3]
+# # Output: true
+# # Explanation: [1,2,3,4,5] is the original sorted array.
+# # You can rotate the array by x = 3 positions to begin on the the element of value 3: [3,4,5,1,2]. 
+# p=nums[:]
+# print(p)
+# nums.sort() 
+# print(nums) 
+# #[1,2,3,4,5]
+# #[3,4,5,1,2]  
+# l=[] 
+# for _ in range (len(nums)):
+#     last_elem=nums[-1] 
+#     for i in range(len(nums)-1,0,-1):  
+#         nums[i]=nums[i-1] 
+#     nums[0]=last_elem  
+#     l.append(nums[:]) 
+# print(l) 
+# flag=False
+# for i in l: 
+#     if i== p: 
+#         flag =True
+#         break
+# if flag ==True: 
+#     print(True) 
+# else : 
+#     print(False)
 
+
+
+# Input: 
+# s = "YazaAay"
+# # Output: "aAa"
+# # Explanation: "aAa" is a nice string because 'A/a' is the only letter of the alphabet in s, and both 'A' and 'a' appear.
+# # "aAa" is the longest nice substring. 
+# l=[]
+# for i in s :  
+#     l.append(i) 
+# print(l) 
+# for i in range(len(l)): 
+#     if l[i].isupper(): 
+#         if l[i+1]==l[i].islower() or l[i-1]==l[i].islower(): 
+#             print(True)
+
+# Input: 
+word1 = "abc"
+word2 = "pqr"
+# Output: "apbqcr" 
+word3=[] 
+word1_list=[]
+word2_list=[] 
+for i in word1: 
+    word1_list.append(i) 
+for i in word2: 
+    word2_list.append(i) 
+print(word1_list)
+print(word2_list) 
