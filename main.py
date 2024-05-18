@@ -612,15 +612,16 @@ accounts = [[1,2,3],[3,2,1]]
 #             print(True)
 
 # Input: 
-word1 = "abc"
-word2 = "pqr"
-# Output: "apbqcr" 
-word3=[] 
-word1_list=[]
-word2_list=[] 
-for i in word1: 
-    word1_list.append(i) 
-for i in word2: 
-    word2_list.append(i) 
-print(word1_list)
-print(word2_list) 
+# word1 = "abc"
+# word2 = "pqr"
+# # Output: "apbqcr" 
+# word3=[] 
+# word1_list=[]
+# word2_list=[] 
+# for i in word1: 
+#     word1_list.append(i) 
+# for i in word2: 
+#     word2_list.append(i) 
+# print(word1_list)
+# print(word2_list) 
+
