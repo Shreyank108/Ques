@@ -625,3 +625,29 @@ accounts = [[1,2,3],[3,2,1]]
 # print(word1_list)
 # print(word2_list) 
 
+
+# if n ==1 : 
+#     print(True) 
+# elif n > 0:
+#     if n%4==0: 
+#         print(True) 
+#     else : 
+#         print(False) 
+# else : 
+#     print(False) 
+
+
+# Input: 
+sentence = "thequickbrownfoxjumpsoverthelazydog"
+# Output: true 
+l=[] 
+for i in set(sentence): 
+    l.append(i) 
+l.sort() 
+sentence="".join(l)
+s='abcdefghijklmnopqrstuvwxyz' 
+print(sentence) 
+if sentence == s : 
+    print(True) 
+else : 
+    print(False)
