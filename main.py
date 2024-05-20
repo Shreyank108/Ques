@@ -1,5 +1,5 @@
 # Input: 
-grid = [[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]]
+# grid = [[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]]
 # Output: 8 
 # count =0
 # c=""
@@ -638,16 +638,31 @@ accounts = [[1,2,3],[3,2,1]]
 
 
 # Input: 
-sentence = "thequickbrownfoxjumpsoverthelazydog"
-# Output: true 
-l=[] 
-for i in set(sentence): 
-    l.append(i) 
-l.sort() 
-sentence="".join(l)
-s='abcdefghijklmnopqrstuvwxyz' 
-print(sentence) 
-if sentence == s : 
-    print(True) 
-else : 
-    print(False)
+# sentence = "thequickbrownfoxjumpsoverthelazydog"
+# # Output: true 
+# l=[] 
+# for i in set(sentence): 
+#     l.append(i) 
+# l.sort() 
+# sentence="".join(l)
+# s='abcdefghijklmnopqrstuvwxyz' 
+# print(sentence) 
+# if sentence == s : 
+#     print(True) 
+# else : 
+#     print(False)
+
+
+# Input: 
+# nums = [2,2,3,2]
+# # Output: 3 
+# p={}
+# for i in nums: 
+#     if i in p: 
+#         p[i]+=1 
+#     else : 
+#         p[i]=1  
+# print(p)
+# for key,value in p.items(): 
+#     if value ==1 : 
+#         print(key)
