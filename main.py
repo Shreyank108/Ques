@@ -666,3 +666,24 @@ accounts = [[1,2,3],[3,2,1]]
 # for key,value in p.items(): 
 #     if value ==1 : 
 #         print(key)
+
+# Input: 
+nums = [2,7,9,3,1]
+# Output: 4
+# Explanation: Rob house 1 (money = 1) and then rob house 3 (money = 3).
+# Total amount you can rob = 1 + 3 = 4. 
+m,n=[],[] 
+
+for i in range(0,len(nums),2): 
+    m.append(nums[i]) 
+for i in range(1,len(nums),2): 
+    n.append(nums[i]) 
+print(m)
+print(n) 
+count1,count2=0,0 
+for i in m: 
+    count1+=i   
+for i in n: 
+    count2+=i 
+print(max(count1,count2))   
+
