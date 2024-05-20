@@ -668,22 +668,33 @@ accounts = [[1,2,3],[3,2,1]]
 #         print(key)
 
 # Input: 
-nums = [2,7,9,3,1]
-# Output: 4
-# Explanation: Rob house 1 (money = 1) and then rob house 3 (money = 3).
-# Total amount you can rob = 1 + 3 = 4. 
-m,n=[],[] 
+# nums = [2,7,9,3,1]
+# # Output: 4
+# # Explanation: Rob house 1 (money = 1) and then rob house 3 (money = 3).
+# # Total amount you can rob = 1 + 3 = 4. 
+# m,n=[],[] 
 
-for i in range(0,len(nums),2): 
-    m.append(nums[i]) 
-for i in range(1,len(nums),2): 
-    n.append(nums[i]) 
-print(m)
-print(n) 
-count1,count2=0,0 
-for i in m: 
-    count1+=i   
-for i in n: 
-    count2+=i 
-print(max(count1,count2))   
+# for i in range(0,len(nums),2): 
+#     m.append(nums[i]) 
+# for i in range(1,len(nums),2): 
+#     n.append(nums[i]) 
+# print(m)
+# print(n) 
+# count1,count2=0,0 
+# for i in m: 
+#     count1+=i   
+# for i in n: 
+#     count2+=i 
+# print(max(count1,count2))   
 
+
+l=[10,20,30,50,40,30,20,10] 
+s=0  
+e=len(l)-1 
+while (s<e): 
+    mid = s+(e-s)//2   
+    if (l[mid]<l[mid+1]): 
+        s=mid+1  
+    else : 
+        e=mid 
+print(s)
