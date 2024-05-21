@@ -688,13 +688,45 @@ accounts = [[1,2,3],[3,2,1]]
 # print(max(count1,count2))   
 
 
-l=[10,20,30,50,40,30,20,10] 
-s=0  
-e=len(l)-1 
-while (s<e): 
-    mid = s+(e-s)//2   
-    if (l[mid]<l[mid+1]): 
-        s=mid+1  
-    else : 
-        e=mid 
-print(s)
+# l=[10,20,30,50,40,30,20,10] 
+# s=0  
+# e=len(l)-1 
+# while (s<e): 
+#     mid = s+(e-s)//2   
+#     if (l[mid]<l[mid+1]): 
+#         s=mid+1  
+#     else : 
+#         e=mid 
+# print(s)
+
+
+# Input: 
+# chars = ["a","a","b","b","b","b","b","b","b","b","b","b","b","b","b","b","b","c","c","c"]
+# # Output: Return 6, and the first 6 characters of the input array should be: ["a","2","b","2","c","3"] 
+# p={}
+# for i in chars: 
+#     if i in p: 
+#         p[i]+=1 
+#     else : 
+#         p[i]=1 
+# print(p) 
+# s="" 
+# for key,value in p.items(): 
+#     s+=key   
+#     s+=str(value)
+# print(s)
+# l=[] 
+# for i in s: 
+#    l.append(str(i)) 
+# print(l)  
+
+# prime number => jo khud ya 1 se devide ho jaye     
+
+# n=10  
+# if n%2==0: 
+#     print ("Even") 
+# else ("Not an Even ")
+             
+
+   
+    
