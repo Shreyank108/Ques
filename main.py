@@ -727,6 +727,15 @@ accounts = [[1,2,3],[3,2,1]]
 #     print ("Even") 
 # else ("Not an Even ")
              
-
+#Finding Range   
+n=10  
+for i in range(2,n+1): 
+    flag =True
+    for j in range(2,i): 
+        if i%j==0: 
+            flag =False                      
+            break   
+    if flag :
+        print(i)
    
     
