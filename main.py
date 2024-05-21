@@ -739,19 +739,62 @@ accounts = [[1,2,3],[3,2,1]]
 #         print(i)
    
 # Input: 
-s1 = "bank"
-s2 = "knab"
+# s1 = "bank"
+# s2 = "knab"
 # Output: true   
 # Explanation: For example, swap the first character with the last character of s2 to make "bank".
-if s1 ==s2 : 
-    print (True)  
-if sorted(s1) != sorted(s2): 
-    print(False)  
-count =0
-for i in range(len(s1)) : 
-    if s1[i] != s2[i]: 
-         count +=1    
-if count <=2: 
-     print(True) 
-else : 
-    print(False)
+# if s1 ==s2 : 
+#     print (True)  
+# if sorted(s1) != sorted(s2): 
+#     print(False)  
+# count =0
+# for i in range(len(s1)) : 
+#     if s1[i] != s2[i]: 
+#          count +=1    
+# if count <=2: 
+#      print(True) 
+# else : 
+#     print(False) 
+
+
+# Input: 
+s = "xyz"
+# Output: 2
+# Explanation: The digits that appear in s are [1, 2, 3]. The second largest digit is 2. 
+# l=[]
+# num ="123456789" 
+# falg =0
+# for i in num: 
+#     if i in s: 
+#         flag =True   
+#         break 
+#     else : 
+#         flag = 0  
+# if flag ==1 : 
+#     for i in s: 
+#         if i.isdigit(): 
+#             l.append(int(i)) 
+#     m=set(l) 
+#     l.clear()
+#     for i in m : 
+#         l.append(i) 
+#     l.sort() 
+#     if len(l)==1:
+#         print(-1) 
+#     else : 
+#         print(l[1]) 
+# else : 
+#     print(-1)
+
+# Input:
+s = "Hello how are you Contestant"
+k = 4
+d=""
+# Output: "Hello how are you"
+p=s.split(" ")
+print(p)  
+for i in range(0,k): 
+    print(p[i])
+    d+=p[i]
+    d+=" "
+print(d.strip())
