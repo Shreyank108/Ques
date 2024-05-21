@@ -728,14 +728,30 @@ accounts = [[1,2,3],[3,2,1]]
 # else ("Not an Even ")
              
 #Finding Range   
-n=10  
-for i in range(2,n+1): 
-    flag =True
-    for j in range(2,i): 
-        if i%j==0: 
-            flag =False                      
-            break   
-    if flag :
-        print(i)
+# n=10  
+# for i in range(2,n+1): 
+#     flag =True
+#     for j in range(2,i): 
+#         if i%j==0: 
+#             flag =False                      
+#             break   
+#     if flag :
+#         print(i)
    
-    
+# Input: 
+s1 = "bank"
+s2 = "knab"
+# Output: true   
+# Explanation: For example, swap the first character with the last character of s2 to make "bank".
+if s1 ==s2 : 
+    print (True)  
+if sorted(s1) != sorted(s2): 
+    print(False)  
+count =0
+for i in range(len(s1)) : 
+    if s1[i] != s2[i]: 
+         count +=1    
+if count <=2: 
+     print(True) 
+else : 
+    print(False)
