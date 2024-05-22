@@ -787,14 +787,44 @@ s = "xyz"
 #     print(-1)
 
 # Input:
-s = "Hello how are you Contestant"
-k = 4
-d=""
-# Output: "Hello how are you"
-p=s.split(" ")
-print(p)  
-for i in range(0,k): 
-    print(p[i])
-    d+=p[i]
-    d+=" "
-print(d.strip())
+# s = "Hello how are you Contestant"
+# k = 4
+# d=""
+# # Output: "Hello how are you"
+# p=s.split(" ")
+# print(p)  
+# for i in range(0,k): 
+#     print(p[i])
+#     d+=p[i]
+#     d+=" "
+# print(d.strip())
+
+
+# Input: 
+# firstWord = "acb"
+# secondWord = "cba"
+# targetWord = "cdb"
+# # Output: true
+# # Explanation:
+# # The numerical value of firstWord is "acb" -> "021" -> 21.
+# # The numerical value of secondWord is "cba" -> "210" -> 210.
+# # The numerical value of targetWord is "cdb" -> "231" -> 231.
+# # We return true because 21 + 210 == 231. 
+# p=firstWord.replace('a','1').replace('b','2').replace('c','3') 
+# p1=secondWord.replace('a','1').replace('b','2').replace('c','3') 
+# p2=targetWord.replace('a','1').replace('b','2').replace('c','3') 
+# if int(p) + int(p1) == int(p2): 
+#     print(True) 
+# else : 
+#     print(False)
+
+
+# Input: 
+num = "35427"
+# Output: "35427"
+# Explanation: "35427" is already an odd number. 
+p=num[::-1] 
+print(p) 
+for i in p: 
+    if int(i)%2!=0: 
+      print(i[1::])  
