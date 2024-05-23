@@ -873,3 +873,41 @@ s = "xyz"
 #   if nums[i] ==target : 
 #       l.append(i) 
 # print(l) 
+
+
+# Input:
+# nums = [-1,-2,3,4]
+# k = 3
+# # Output: [3,3]
+# # Explanation:
+# # The subsequence has the largest sum of 3 + 3 = 6. 
+# nums.sort(reverse=True) 
+# print(nums) 
+# count =0
+# l=[]
+# for i in range(k): 
+#     l.append(nums[i]) 
+# print(l)
+
+
+# Input: 
+# words = ["abc","car","adad","racecatr","cool"]
+# # Output: "ada" 
+# for i in words: 
+#   if i==i[::-1] :
+#     print(i) 
+#     break 
+# else : 
+#     print("")
+
+
+# Input: 
+title = "capiTalIze tHe titLe"
+# Output: "Capitalize The Title" 
+p=title.lower() 
+m=p.split(" ")  
+print(m)
+l=[] 
+for i in m: 
+  l.append(i.capitalize()) 
+print(" ".join(l))
