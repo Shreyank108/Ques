@@ -820,11 +820,44 @@ s = "xyz"
 
 
 # Input: 
-num = "35427"
-# Output: "35427"
-# Explanation: "35427" is already an odd number. 
-p=num[::-1] 
+# num = "35427"
+# # Output: "35427"
+# # Explanation: "35427" is already an odd number. 
+# p=num[::-1] 
+# print(p) 
+# for i in p: 
+#     if int(i)%2!=0: 
+#       print(i[1::])  
+
+# Input: 
+words1=["a","ab"]
+words2 = ["a","a","a","ab"]
+# Output: 2 
+p={}
+for i in words1 : 
+  if i in p: 
+    p[i]+=1
+  else: 
+    p[i]=1 
 print(p) 
-for i in p: 
-    if int(i)%2!=0: 
-      print(i[1::])  
+p1={} 
+for i in words2: 
+  if i in p1: 
+    p1[i]+=1 
+  else : 
+    p1[i]=1  
+print(p1)
+l,l1=[],[] 
+for kwy,value in p.items(): 
+  if value ==1 : 
+    l.append(kwy)  
+for kwy,value in p1.items(): 
+  if value ==1 : 
+    l1.append(kwy)   
+print(l)
+print(l1) 
+count =0
+for i in l: 
+  if i in l1: 
+    count +=1  
+print(count)
