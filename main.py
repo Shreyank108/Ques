@@ -913,12 +913,26 @@ s = "xyz"
 # print(" ".join(l))
  
 # Input: 
-num = 30
-# Output: 2
-# Explanation:
-# The only integers less than or equal to 4 whose digit sums are even are 2 and 4. 
+# num = 30
+# # Output: 2
+# # Explanation:
+# # The only integers less than or equal to 4 whose digit sums are even are 2 and 4. 
+# count =0
+# for i in range(num): 
+#   print(i) 
+#   for j in str(i): 
+
+
+# Input: 
+words = ["pay","attention","practice","attend"]
+pref = "at"
+lenght= len(pref)
+p=[]
+for i in words: 
+    p.append(i[:lenght]) 
+print(p) 
 count =0
-for i in range(num): 
-  print(i) 
-  for j in str(i): 
-    
+for i in p:
+  if pref in i: 
+    count +=1  
+print(count)
