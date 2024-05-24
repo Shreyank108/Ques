@@ -902,12 +902,23 @@ s = "xyz"
 
 
 # Input: 
-title = "capiTalIze tHe titLe"
-# Output: "Capitalize The Title" 
-p=title.lower() 
-m=p.split(" ")  
-print(m)
-l=[] 
-for i in m: 
-  l.append(i.capitalize()) 
-print(" ".join(l))
+# title = "capiTalIze tHe titLe"
+# # Output: "Capitalize The Title" 
+# p=title.lower() 
+# m=p.split(" ")  
+# print(m)
+# l=[] 
+# for i in m: 
+#   l.append(i.capitalize()) 
+# print(" ".join(l))
+ 
+# Input: 
+num = 30
+# Output: 2
+# Explanation:
+# The only integers less than or equal to 4 whose digit sums are even are 2 and 4. 
+count =0
+for i in range(num): 
+  print(i) 
+  for j in str(i): 
+    
