@@ -924,15 +924,21 @@ s = "xyz"
 
 
 # Input: 
-words = ["pay","attention","practice","attend"]
-pref = "at"
-lenght= len(pref)
-p=[]
-for i in words: 
-    p.append(i[:lenght]) 
-print(p) 
-count =0
-for i in p:
-  if pref in i: 
-    count +=1  
-print(count)
+# words = ["pay","attention","practice","attend"]
+# pref = "at"
+# lenght= len(pref)
+# p=[]
+# for i in words: 
+#     p.append(i[:lenght]) 
+# print(p) 
+# count =0
+# for i in p:
+#   if pref in i: 
+#     count +=1  
+# print(count)
+
+# Input: 
+nums = [[3,1,2,4,5],[1,2,3,4],[3,4,5,6]]
+# Output: [3,4]
+for i in range(len(nums)): 
+     {nums[i]}.intersection({nums[i+1]}).intersection({nums[i+2]}) 
