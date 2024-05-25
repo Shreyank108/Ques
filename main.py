@@ -945,18 +945,48 @@ s = "xyz"
 
 
 
-items1 = [[1,1],[4,5],[3,8]]
-items2 = [[3,1],[1,5]] 
+# items1 = [[1,1],[4,5],[3,8]]
+# items2 = [[3,1],[1,5]] 
 
-result ={i[0]:i[1] for i in items1} 
-result1 ={i[0]:i[1] for i in items2} 
-print(result)
-print(result1) 
-from collections import Counter   
-p=Counter(result)
-p1=Counter(result1)  
-merger = p+p1   
-dict_hash= dict(merger) 
-print(dict_hash) 
-result2=[[k,v] for k,v in dict_hash.items()]
-print(result2)
+# result ={i[0]:i[1] for i in items1} 
+# result1 ={i[0]:i[1] for i in items2} 
+# print(result)
+# print(result1) 
+# from collections import Counter   
+# p=Counter(result)
+# p1=Counter(result1)  
+# merger = p+p1   
+# dict_hash= dict(merger) 
+# print(dict_hash) 
+# result2=[[k,v] for k,v in dict_hash.items()]
+# print(result2)
+
+
+# Input: 
+word = "bac"
+# Output: true
+# Explanation: Select index 3 and delete it: word becomes "abc" and each character has a frequency of 1.   
+m="".join(set(word)) 
+m.sort()
+print(word)
+if word == set(word): 
+     print(True) 
+else : 
+     p={}
+     for i in word: 
+          if i in p: 
+               p[i]+=1 
+          else : 
+               p[i]=1 
+     print(p) 
+     l=[]
+     for key,value in p.items(): 
+          if value==2: 
+               l.append(key) 
+     print(l)
+     if len(l)==1: 
+          print("True") 
+     else : 
+          print("False")  
+     
+     
