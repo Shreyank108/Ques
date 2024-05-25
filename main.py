@@ -962,31 +962,42 @@ s = "xyz"
 # print(result2)
 
 
+# # Input: 
+# word = "bac"
+# # Output: true
+# # Explanation: Select index 3 and delete it: word becomes "abc" and each character has a frequency of 1.   
+# m="".join(set(word)) 
+# m.sort()
+# print(word)
+# if word == set(word): 
+#      print(True) 
+# else : 
+#      p={}
+#      for i in word: 
+#           if i in p: 
+#                p[i]+=1 
+#           else : 
+#                p[i]=1 
+#      print(p) 
+#      l=[]
+#      for key,value in p.items(): 
+#           if value==2: 
+#                l.append(key) 
+#      print(l)
+#      if len(l)==1: 
+#           print("True") 
+#      else : 
+#           print("False")  
+     
+     
 # Input: 
-word = "bac"
-# Output: true
-# Explanation: Select index 3 and delete it: word becomes "abc" and each character has a frequency of 1.   
-m="".join(set(word)) 
-m.sort()
-print(word)
-if word == set(word): 
-     print(True) 
-else : 
-     p={}
-     for i in word: 
-          if i in p: 
-               p[i]+=1 
-          else : 
-               p[i]=1 
-     print(p) 
-     l=[]
-     for key,value in p.items(): 
-          if value==2: 
-               l.append(key) 
-     print(l)
-     if len(l)==1: 
-          print("True") 
-     else : 
-          print("False")  
-     
-     
+a = 12
+b = 6
+# Output: 4
+# Explanation: The common factors of 12 and 6 are 1, 2, 3, 6. 
+count =0
+for i in range (1,n): 
+     if a%i==0 and b%i==0: 
+          print(i)   
+          count +=1 
+print(count)
