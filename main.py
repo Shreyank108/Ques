@@ -938,7 +938,25 @@ s = "xyz"
 # print(count)
 
 # Input: 
-nums = [[3,1,2,4,5],[1,2,3,4],[3,4,5,6]]
-# Output: [3,4]
-for i in range(len(nums)): 
-     {nums[i]}.intersection({nums[i+1]}).intersection({nums[i+2]}) 
+# nums = [[3,1,2,4,5],[1,2,3,4],[3,4,5,6]]
+# # Output: [3,4]
+# for i in range(len(nums)): 
+#      {nums[i]}.intersection({nums[i+1]}).intersection({nums[i+2]}) 
+
+
+
+items1 = [[1,1],[4,5],[3,8]]
+items2 = [[3,1],[1,5]] 
+
+result ={i[0]:i[1] for i in items1} 
+result1 ={i[0]:i[1] for i in items2} 
+print(result)
+print(result1) 
+from collections import Counter   
+p=Counter(result)
+p1=Counter(result1)  
+merger = p+p1   
+dict_hash= dict(merger) 
+print(dict_hash) 
+result2=[[k,v] for k,v in dict_hash.items()]
+print(result2)
