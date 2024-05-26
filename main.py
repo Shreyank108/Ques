@@ -1021,16 +1021,22 @@ s = "xyz"
 
 
 # Input: 
-nums = [1,2,4,7,10]
-# Output: 9
-# Explanation: 6 and 12 are even numbers that are divisible by 3. (6 + 12) / 2 = 9. 
-count =0  
-l=[]
-for i in nums: 
-     if i%3==0 and i%2==0: 
-          l.append(i)
-          count +=i   
-if len(l)==0: 
-     print(0) 
-else : 
-     print(count//len(l))
+# nums = [1,2,4,7,10]
+# # Output: 9
+# # Explanation: 6 and 12 are even numbers that are divisible by 3. (6 + 12) / 2 = 9. 
+# count =0  
+# l=[]
+# for i in nums: 
+#      if i%3==0 and i%2==0: 
+#           l.append(i)
+#           count +=i   
+# if len(l)==0: 
+#      print(0) 
+# else : 
+#      print(count//len(l)) 
+
+# Input:
+# nums = [4,4,2,4,3]
+# # Output: 3 
+# p=[*set(nums)]  
+# print(p)
