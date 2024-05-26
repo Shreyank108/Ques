@@ -1021,6 +1021,16 @@ s = "xyz"
 
 
 # Input: 
-nums = [1,3,6,10,12,15]
+nums = [1,2,4,7,10]
 # Output: 9
-# Explanation: 6 and 12 are even numbers that are divisible by 3. (6 + 12) / 2 = 9.
+# Explanation: 6 and 12 are even numbers that are divisible by 3. (6 + 12) / 2 = 9. 
+count =0  
+l=[]
+for i in nums: 
+     if i%3==0 and i%2==0: 
+          l.append(i)
+          count +=i   
+if len(l)==0: 
+     print(0) 
+else : 
+     print(count//len(l))
