@@ -991,13 +991,30 @@ s = "xyz"
      
      
 # Input: 
-a = 12
-b = 6
-# Output: 4
-# Explanation: The common factors of 12 and 6 are 1, 2, 3, 6. 
-count =0
-for i in range (1,n): 
-     if a%i==0 and b%i==0: 
-          print(i)   
-          count +=1 
-print(count)
+# a = 12
+# b = 6
+# # Output: 4
+# # Explanation: The common factors of 12 and 6 are 1, 2, 3, 6. 
+# count =0
+# for i in range (1,n): 
+#      if a%i==0 and b%i==0: 
+#           print(i)   
+#           count +=1 
+# print(count)
+
+# Input: 
+nums = [-1,2,-3,3]
+# Output: 3
+# Explanation: 3 is the only valid k we can find in the array.  
+posi=set() 
+nege=set() 
+result=[] 
+for i in nums: 
+     if i>0: 
+          posi.add(i) 
+     else : 
+          nege.add(i) 
+for i in posi: 
+     if -i in nege: 
+          result.append(i)
+print(*result)
