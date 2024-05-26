@@ -1040,3 +1040,24 @@ s = "xyz"
 # # Output: 3 
 # p=[*set(nums)]  
 # print(p)
+
+
+words = ["aba","aabb","abcd","bac","aabc"] 
+m=[]
+for i in words: 
+    p=sorted(set(i)) 
+    k="".join(p) 
+    m.append(k) 
+print(m) 
+p={} 
+for i in m: 
+    if i in p: 
+        p[i]+=1 
+    else : 
+        p[i]=1  
+print(p)
+count =0 
+for value in p.values(): 
+    if value >1:  
+        count +=1 
+print(count)
