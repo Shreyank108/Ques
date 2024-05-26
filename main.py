@@ -1003,18 +1003,24 @@ s = "xyz"
 # print(count)
 
 # Input: 
-nums = [-1,2,-3,3]
-# Output: 3
-# Explanation: 3 is the only valid k we can find in the array.  
-posi=set() 
-nege=set() 
-result=[] 
-for i in nums: 
-     if i>0: 
-          posi.add(i) 
-     else : 
-          nege.add(i) 
-for i in posi: 
-     if -i in nege: 
-          result.append(i)
-print(*result)
+# nums = [-1,2,-3,3]
+# # Output: 3
+# # Explanation: 3 is the only valid k we can find in the array.  
+# posi=set() 
+# nege=set() 
+# result=[] 
+# for i in nums: 
+#      if i>0: 
+#           posi.add(i) 
+#      else : 
+#           nege.add(i) 
+# for i in posi: 
+#      if -i in nege: 
+#           result.append(i)
+# print(*result)
+
+
+# Input: 
+nums = [1,3,6,10,12,15]
+# Output: 9
+# Explanation: 6 and 12 are even numbers that are divisible by 3. (6 + 12) / 2 = 9.
