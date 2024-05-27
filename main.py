@@ -1071,14 +1071,22 @@ s = "xyz"
 # l.append([*p])  
 # print(len(*l))
 
-nums = [-3,-2,-1,0,0,1,2]
-count_neg =0 
-count_posi=0  
-for i in nums: 
-    if i==0: 
-        nums.remove(0) 
-    if i<0: 
-        count_neg+=1 
+# nums = [-3,-2,-1,0,0,1,2]
+# count_neg =0 
+# count_posi=0  
+# for i in nums: 
+#     if i==0: 
+#         nums.remove(0) 
+#     if i<0: 
+#         count_neg+=1 
+#     else : 
+#         count_posi+=1  
+# print(max(count_posi,count_neg))
+
+n=10   
+for i in range(2,n): 
+    for j in range(2,i): 
+        if i%j==0: 
+            break 
     else : 
-        count_posi+=1  
-print(max(count_posi,count_neg))
+        print(i) 
