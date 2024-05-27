@@ -1042,22 +1042,43 @@ s = "xyz"
 # print(p)
 
 
-words = ["aba","aabb","abcd","bac","aabc"] 
-m=[]
-for i in words: 
-    p=sorted(set(i)) 
-    k="".join(p) 
-    m.append(k) 
-print(m) 
-p={} 
-for i in m: 
-    if i in p: 
-        p[i]+=1 
+# words = ["aba","aabb","abcd","bac","aabc"] 
+# m=[]
+# for i in words: 
+#     p=sorted(set(i)) 
+#     k="".join(p) 
+#     m.append(k) 
+# print(m) 
+# p={} 
+# for i in m: 
+#     if i in p: 
+#         p[i]+=1 
+#     else : 
+#         p[i]=1  
+# print(p)
+# count =0 
+# for value in p.values(): 
+#     if value >1:  
+#         count +=1 
+# print(count) 
+
+# Input: 
+# num = 121
+# # Output: 1
+# # Explanation: 7 divides itself, hence the answer is 1.
+# l=[]
+# p=set(str(num)) 
+# l.append([*p])  
+# print(len(*l))
+
+nums = [-3,-2,-1,0,0,1,2]
+count_neg =0 
+count_posi=0  
+for i in nums: 
+    if i==0: 
+        nums.remove(0) 
+    if i<0: 
+        count_neg+=1 
     else : 
-        p[i]=1  
-print(p)
-count =0 
-for value in p.values(): 
-    if value >1:  
-        count +=1 
-print(count)
+        count_posi+=1  
+print(max(count_posi,count_neg))
