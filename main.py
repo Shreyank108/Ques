@@ -1083,10 +1083,15 @@ s = "xyz"
 #         count_posi+=1  
 # print(max(count_posi,count_neg))
 
-n=10   
-for i in range(2,n): 
-    for j in range(2,i): 
-        if i%j==0: 
-            break 
-    else : 
-        print(i) 
+# n=10   
+# for i in range(2,n): 
+#     for j in range(2,i): 
+#         if i%j==0: 
+#             break 
+#     else : 
+#         print(i) 
+
+# Input: 
+nums = [13,25,83,77]
+# Output: [1,3,2,5,8,3,7,7] 
+print("".join(nums)) 
