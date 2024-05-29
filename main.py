@@ -1092,6 +1092,26 @@ s = "xyz"
 #         print(i) 
 
 # Input: 
-nums = [13,25,83,77]
-# Output: [1,3,2,5,8,3,7,7] 
-print("".join(nums)) 
+# nums = [13,25,83,77]
+# # Output: [1,3,2,5,8,3,7,7] 
+# print("".join(nums)) 
+
+
+# Input: 
+n = 15
+# Output: ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","FizzBuzz"] 
+'''answer[i] == "FizzBuzz" if i is divisible by 3 and 5.
+answer[i] == "Fizz" if i is divisible by 3.
+answer[i] == "Buzz" if i is divisible by 5.
+answer[i] == i (as a string) if none of the above conditions are true.''' 
+l=[]
+for i in range(1,n+1):
+    if i%3==0 and i%5==0: 
+        l.append("FizzBuzz") 
+    if i%3==0: 
+        l.append("Fizz") 
+    if i%5==0: 
+        l.append("Buzz") 
+    else : 
+        l.append(i) 
+print(l)
