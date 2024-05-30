@@ -758,7 +758,7 @@ accounts = [[1,2,3],[3,2,1]]
 
 
 # Input: 
-s = "xyz"
+# s = "xyz"
 # Output: 2
 # Explanation: The digits that appear in s are [1, 2, 3]. The second largest digit is 2. 
 # l=[]
@@ -1097,21 +1097,44 @@ s = "xyz"
 # print("".join(nums)) 
 
 
-# Input: 
-n = 15
-# Output: ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","FizzBuzz"] 
-'''answer[i] == "FizzBuzz" if i is divisible by 3 and 5.
-answer[i] == "Fizz" if i is divisible by 3.
-answer[i] == "Buzz" if i is divisible by 5.
-answer[i] == i (as a string) if none of the above conditions are true.''' 
-l=[]
-for i in range(1,n+1):
-    if i%3==0 and i%5==0: 
-        l.append("FizzBuzz") 
-    if i%3==0: 
-        l.append("Fizz") 
-    if i%5==0: 
-        l.append("Buzz") 
-    else : 
-        l.append(i) 
-print(l)
+# # Input: 
+# n = 15
+# # Output: ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","FizzBuzz"] 
+# '''answer[i] == "FizzBuzz" if i is divisible by 3 and 5.
+# answer[i] == "Fizz" if i is divisible by 3.
+# answer[i] == "Buzz" if i is divisible by 5.
+# answer[i] == i (as a string) if none of the above conditions are true.''' 
+# l=[]
+# for i in range(1,n+1):
+#     if i%3==0 and i%5==0: 
+#         l.append("FizzBuzz") 
+#     if i%3==0: 
+#         l.append("Fizz") 
+#     if i%5==0: 
+#         l.append("Buzz") 
+#     else : 
+#         l.append(i) 
+# print(l)
+
+
+ 
+# Input:
+nums1 = [[1,2],[2,3],[4,5]]
+nums2 = [[1,4],[3,2],[4,1]]
+# Output: [[1,6],[2,3],[3,2],[4,6]]  
+n1={i[0]:i[1] for i in nums1}
+n2={i[0]:i[1] for i in nums2} 
+
+print(n1)
+print(n2)
+from collections import Counter  
+num3 =Counter(n1)
+num4 =Counter(n2) 
+
+merger= num3+num4   
+
+changes_to_dict =dict(merger) 
+print([changes_to_dict]) 
+
+result = [[k,v] for k,v in changes_to_dict.items()] 
+print(result)
