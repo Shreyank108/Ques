@@ -1118,23 +1118,42 @@ accounts = [[1,2,3],[3,2,1]]
 
 
  
-# Input:
-nums1 = [[1,2],[2,3],[4,5]]
-nums2 = [[1,4],[3,2],[4,1]]
-# Output: [[1,6],[2,3],[3,2],[4,6]]  
-n1={i[0]:i[1] for i in nums1}
-n2={i[0]:i[1] for i in nums2} 
+# # Input:
+# nums1 = [[1,2],[2,3],[4,5]]
+# nums2 = [[1,4],[3,2],[4,1]]
+# # Output: [[1,6],[2,3],[3,2],[4,6]]  
+# n1={i[0]:i[1] for i in nums1}
+# n2={i[0]:i[1] for i in nums2} 
 
-print(n1)
-print(n2)
-from collections import Counter  
-num3 =Counter(n1)
-num4 =Counter(n2) 
+# print(n1)
+# print(n2)
+# from collections import Counter  
+# num3 =Counter(n1)
+# num4 =Counter(n2) 
 
-merger= num3+num4   
+# merger= num3+num4   
 
-changes_to_dict =dict(merger) 
-print([changes_to_dict]) 
+# changes_to_dict =dict(merger) 
+# print([changes_to_dict]) 
 
-result = [[k,v] for k,v in changes_to_dict.items()] 
-print(result)
+# result = [[k,v] for k,v in changes_to_dict.items()] 
+# print(result) 
+
+
+a=nums1[:]
+a.extend(nums2)
+dic=Counter(a)
+m=max(dic.values())
+ans=[]
+if m>1:
+    for i,j in dic.items():
+        if j==m:
+            ans.append(i)
+    return min(ans)
+else:
+    min1=min(nums1)
+    min2=min(nums2)
+    if min1>min2:
+        return int(str(min2)+str(min1))
+    else:
+        return int(str(min1)+str(min2))
