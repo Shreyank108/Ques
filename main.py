@@ -1182,17 +1182,17 @@ accounts = [[1,2,3],[3,2,1]]
 # else : 
 #     print(sum) 
 
-tmp = list(s)
-start = 0
-end = len(s) - 1
+# tmp = list(s)
+# start = 0
+# end = len(s) - 1
 
-while start <= end:
-    l = tmp[start]
-    r = tmp[end]
-    if l != r:
-        change = l if l<r else r
-        tmp[start], tmp[end] = change, change
-    start += 1
-    end -= 1
+# while start <= end:
+#     l = tmp[start]
+#     r = tmp[end]
+#     if l != r:
+#         change = l if l<r else r
+#         tmp[start], tmp[end] = change, change
+#     start += 1
+#     end -= 1
 
-return ("").join(tmp)
+# return ("").join(tmp)
