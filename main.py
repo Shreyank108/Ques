@@ -1172,12 +1172,12 @@ accounts = [[1,2,3],[3,2,1]]
 
 
 # Input: 
-arrivalTime = 15
-delayedTime = 5 
-# Output: 20 
-# Explanation: Arrival time of the train was 15:00 hours. It is delayed by 5 hours. Now it will reach at 15+5 = 20 (20:00 hours) 
-sum= arrivalTime+delayedTime  
-if sum ==24 : 
-    print(0) 
-else : 
-    print(sum)
+# arrivalTime = 15
+# delayedTime = 5 
+# # Output: 20 
+# # Explanation: Arrival time of the train was 15:00 hours. It is delayed by 5 hours. Now it will reach at 15+5 = 20 (20:00 hours) 
+# sum= arrivalTime+delayedTime  
+# if sum ==24 : 
+#     print(0) 
+# else : 
+#     print(sum)
