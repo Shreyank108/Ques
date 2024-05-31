@@ -1140,20 +1140,44 @@ accounts = [[1,2,3],[3,2,1]]
 # print(result) 
 
 
-a=nums1[:]
-a.extend(nums2)
-dic=Counter(a)
-m=max(dic.values())
-ans=[]
-if m>1:
-    for i,j in dic.items():
-        if j==m:
-            ans.append(i)
-    return min(ans)
-else:
-    min1=min(nums1)
-    min2=min(nums2)
-    if min1>min2:
-        return int(str(min2)+str(min1))
-    else:
-        return int(str(min1)+str(min2))
+# a=nums1[:]
+# a.extend(nums2)
+# dic=Counter(a)
+# m=max(dic.values())
+# ans=[]
+# if m>1:
+#     for i,j in dic.items():
+#         if j==m:
+#             ans.append(i)
+#     return min(ans)
+# else:
+#     min1=min(nums1)
+#     min2=min(nums2)
+#     if min1>min2:
+#         return int(str(min2)+str(min1))
+#     else:
+#         return int(str(min1)+str(min2))
+
+
+# Input: 
+# n = 9
+# Output: 21
+# Explanation: Numbers in the range [1, 7] that are divisible by 3, 5, or 7 are 3, 5, 6, 7. The sum of these numbers is 21. 
+# sum=0
+# for i in range(1,n+1): 
+#     if i %3==0 or i%5==0 or i%7==0: 
+#         sum+=i      
+# print(sum)
+
+
+
+# Input: 
+arrivalTime = 15
+delayedTime = 5 
+# Output: 20 
+# Explanation: Arrival time of the train was 15:00 hours. It is delayed by 5 hours. Now it will reach at 15+5 = 20 (20:00 hours) 
+sum= arrivalTime+delayedTime  
+if sum ==24 : 
+    print(0) 
+else : 
+    print(sum)
