@@ -1195,4 +1195,33 @@ accounts = [[1,2,3],[3,2,1]]
 #     start += 1
 #     end -= 1
 
-# return ("").join(tmp)
+# return ("").join(tmp) 
+
+
+# Input: 
+# n = 10 
+# ["call","call","call"]
+# # Output: [10,11,12]
+# # Explanation: 
+# # counter() = 10 // The first time counter() is called, it returns n.
+# # counter() = 11 // Returns 1 more than the previous time.
+# # counter() = 12 // Returns 1 more than the previous time. 
+# print(n)
+
+# Input: 
+# init = 5
+# calls = ["increment","reset","decrement"]
+# # Output: [1,2,1,0,0] 
+# count =init
+# l=[]  
+# for i in calls : 
+#     if i =="increment" : 
+#         count+=1  
+#         l.append(count)  
+#     elif i =="decrement": 
+#         count -=1  
+#         l.append(count)
+#     elif  i=="reset" :
+#         count =init  
+#         l.append(count)
+# print(l)
