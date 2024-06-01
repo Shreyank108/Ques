@@ -1225,3 +1225,8 @@ accounts = [[1,2,3],[3,2,1]]
 #         count =init  
 #         l.append(count)
 # print(l)
+
+
+s = "aaabc" 
+p=len(set(s)) 
+print(p)
