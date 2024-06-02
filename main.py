@@ -1254,21 +1254,24 @@ accounts = [[1,2,3],[3,2,1]]
 #     print(False) 
 
 # Input: 
-words = ["cd","ac","dc","ca","zz"]
+# words = ["cd","ac","dc","ca","zz"]
 # Output: 2  
-l=[]
-for i in words: 
-    l.append("".join(sorted(i))) 
-print(l) 
-p={}
-for i in l: 
-    if i in p: 
-        p[i]+=1 
-    else : 
-        p[i]=1 
-print(p) 
-count =0   
-for value in p.values(): 
-    if value ==2 : 
-        count+=1  
-print(count)
+# l=[]
+# for i in words: 
+#     l.append("".join(sorted(i))) 
+# print(l) 
+# p={}
+# for i in l: 
+#     if i in p: 
+#         p[i]+=1 
+#     else : 
+#         p[i]=1 
+# print(p) 
+# count =0   
+# for value in p.values(): 
+#     if value ==2 : 
+#         count+=1  
+# print(count) 
+
+
+
