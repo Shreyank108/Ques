@@ -1231,24 +1231,44 @@ accounts = [[1,2,3],[3,2,1]]
 # p=len(set(s)) 
 # print(p)
 
-# Input:
-n = 192
-# Output: true
-# Explanation: We concatenate the numbers n = 192 and 2 * n = 384 and 3 * n = 576. The resulting number is 192384576. This number contains all the digits from 1 to 9 exactly once. 
+# # Input:
+# n = 192
+# # Output: true
+# # Explanation: We concatenate the numbers n = 192 and 2 * n = 384 and 3 * n = 576. The resulting number is 192384576. This number contains all the digits from 1 to 9 exactly once. 
+# l=[]
+# one=n*2  
+# two=n*3  
+# l.append(n)
+# l.append(one)
+# l.append(two) 
+# print(l) 
+# p="" 
+# for i in l: 
+#     p+=str(i) 
+# s="".join(sorted(p))
+# print(s) 
+# d='123456789' 
+# if s==d:  
+#     print(True) 
+# else : 
+#     print(False) 
+
+# Input: 
+words = ["cd","ac","dc","ca","zz"]
+# Output: 2  
 l=[]
-one=n*2  
-two=n*3  
-l.append(n)
-l.append(one)
-l.append(two) 
+for i in words: 
+    l.append("".join(sorted(i))) 
 print(l) 
-p="" 
+p={}
 for i in l: 
-    p+=str(i) 
-s="".join(sorted(p))
-print(s) 
-d='123456789' 
-if s==d:  
-    print(True) 
-else : 
-    print(False)
+    if i in p: 
+        p[i]+=1 
+    else : 
+        p[i]=1 
+print(p) 
+count =0   
+for value in p.values(): 
+    if value ==2 : 
+        count+=1  
+print(count)
