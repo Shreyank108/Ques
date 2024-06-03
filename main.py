@@ -1286,16 +1286,31 @@ s = "string"
 # print(result)
 
 
-result = []
-reverse = False
-for char in s:
-    if char == 'i':
-        reverse = not reverse
-    else:
-        if reverse:
-            result.insert(0, char)
-        else:
-            result.append(char)
-if reverse:
-    result.reverse()
-return ''.join(result)
+# result = []
+# reverse = False
+# for char in s:
+#     if char == 'i':
+#         reverse = not reverse
+#     else:
+#         if reverse:
+#             result.insert(0, char)
+#         else:
+#             result.append(char)
+# if reverse:
+#     result.reverse()
+# return ''.join(result)
+
+
+# Input: 
+words = ["never","gonna","give","up","on","you"]
+s = "ngguoy"
+# Output: true 
+k=[]
+for i in range(len(words)): 
+    k.append(words[i][0]) 
+m="".join(k) 
+print(m) 
+if m==s: 
+    print(True) 
+else : 
+    print(False)
