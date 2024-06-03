@@ -1274,4 +1274,28 @@ accounts = [[1,2,3],[3,2,1]]
 # print(count) 
 
 
+s = "string"
+# p = s.split('i')
+# m = []
+# x=p[len(p)-1]
+# for i in range(len(p)-1):
+#     m.append(p[i][::-1])
 
+# result = ''.join(m) + ''.join(x) 
+
+# print(result)
+
+
+result = []
+reverse = False
+for char in s:
+    if char == 'i':
+        reverse = not reverse
+    else:
+        if reverse:
+            result.insert(0, char)
+        else:
+            result.append(char)
+if reverse:
+    result.reverse()
+return ''.join(result)
