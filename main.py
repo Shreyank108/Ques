@@ -1302,15 +1302,15 @@ s = "string"
 
 
 # Input: 
-words = ["never","gonna","give","up","on","you"]
-s = "ngguoy"
-# Output: true 
-k=[]
-for i in range(len(words)): 
-    k.append(words[i][0]) 
-m="".join(k) 
-print(m) 
-if m==s: 
-    print(True) 
-else : 
-    print(False)
+# words = ["never","gonna","give","up","on","you"]
+# s = "ngguoy"
+# # Output: true 
+# k=[]
+# for i in range(len(words)): 
+#     k.append(words[i][0]) 
+# m="".join(k) 
+# print(m) 
+# if m==s: 
+#     print(True) 
+# else : 
+#     print(False)
