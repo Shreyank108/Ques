@@ -1316,20 +1316,28 @@ s = "string"
 #     print(False)
 
 
-# Input: 
-low = 1200
-high = 1230
-# Output: 9
-# Explanation: There are 9 symmetric integers between 1 and 100: 11, 22, 33, 44, 55, 66, 77, 88, and 99. 
-count =0 
-if low<10:
-    for i in range(11,high): 
-        if str(i)==str(i)[::-1]:   
-            print(i)
-            count +=1    
-else : 
-    for i in range(low,high): 
-        if str(i)==str(i)[::-1]:   
-            print(i)
-            count +=1
-print(count)
+# # Input: 
+# low = 1200
+# high = 1230
+# # Output: 9
+# # Explanation: There are 9 symmetric integers between 1 and 100: 11, 22, 33, 44, 55, 66, 77, 88, and 99. 
+# count =0 
+# if low<10:
+#     for i in range(11,high): 
+#         if str(i)==str(i)[::-1]:   
+#             print(i)
+#             count +=1    
+# else : 
+#     for i in range(low,high): 
+#         if str(i)==str(i)[::-1]:   
+#             print(i)
+#             count +=1
+# print(count)
+
+
+ans = diff = prefix = 0 
+        for x in nums: 
+            ans = max(ans, x*diff)
+            diff = max(diff, prefix-x)
+            prefix = max(prefix, x)
+        return ans 
