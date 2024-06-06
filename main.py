@@ -1335,9 +1335,9 @@ s = "string"
 # print(count)
 
 
-ans = diff = prefix = 0 
-        for x in nums: 
-            ans = max(ans, x*diff)
-            diff = max(diff, prefix-x)
-            prefix = max(prefix, x)
-        return ans 
+# ans = diff = prefix = 0 
+#         for x in nums: 
+#             ans = max(ans, x*diff)
+#             diff = max(diff, prefix-x)
+#             prefix = max(prefix, x)
+#         return ans 
