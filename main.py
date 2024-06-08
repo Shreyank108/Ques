@@ -1362,15 +1362,25 @@ s = "string"
 
 
 # Input: 
-nums = [5,1,4,1]
-indexDifference = 2
-valueDifference = 4
-# Output: [0,3]
-# Explanation: In this example, i = 0 and j = 3 can be selected.
-# abs(0 - 3) >= 2 and abs(nums[0] - nums[3]) >= 4.
-# Hence, a valid answer is [0,3].
-# [3,0] is also a valid answer. 
-first = nums[0] 
-last = nums[len(nums)-1] 
+# nums = [5,1,4,1]
+# indexDifference = 2
+# valueDifference = 4
+# # Output: [0,3]
+# # Explanation: In this example, i = 0 and j = 3 can be selected.
+# # abs(0 - 3) >= 2 and abs(nums[0] - nums[3]) >= 4.
+# # Hence, a valid answer is [0,3].
+# # [3,0] is also a valid answer. 
+# first = nums[0] 
+# last = nums[len(nums)-1] 
 
- 
+
+# n = len(grid)
+#         for i in range(n):
+#             isChampion = True
+#             for j in range(n):
+#                 if i != j and grid[j][i] == 1:
+#                     isChampion = False
+#                     break
+#             if isChampion:
+#                 return i
+#         return -1 
