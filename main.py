@@ -1344,18 +1344,33 @@ s = "string"
 
 
 # Input: 
-n = 10
-m = 3
-# Output: 19
-# Explanation: In the given example:
-# - Integers in the range [1, 10] that are not divisible by 3 are [1,2,4,5,7,8,10], num1 is the sum of those integers = 37.
-# - Integers in the range [1, 10] that are divisible by 3 are [3,6,9], num2 is the sum of those integers = 18.
-# # We return 37 - 18 = 19 as the answer. 
-NotDivisibleByM =0  
-DivisibleByM=0
-for i in range(1,n+1): 
-    if i%m==0: 
-        DivisibleByM+=i   
-    else : 
-        NotDivisibleByM+=i   
-print(NotDivisibleByM-DivisibleByM)
+# n = 10
+# m = 3
+# # Output: 19
+# # Explanation: In the given example:
+# # - Integers in the range [1, 10] that are not divisible by 3 are [1,2,4,5,7,8,10], num1 is the sum of those integers = 37.
+# # - Integers in the range [1, 10] that are divisible by 3 are [3,6,9], num2 is the sum of those integers = 18.
+# # # We return 37 - 18 = 19 as the answer. 
+# NotDivisibleByM =0  
+# DivisibleByM=0
+# for i in range(1,n+1): 
+#     if i%m==0: 
+#         DivisibleByM+=i   
+#     else : 
+#         NotDivisibleByM+=i   
+# print(NotDivisibleByM-DivisibleByM)
+
+
+# Input: 
+nums = [5,1,4,1]
+indexDifference = 2
+valueDifference = 4
+# Output: [0,3]
+# Explanation: In this example, i = 0 and j = 3 can be selected.
+# abs(0 - 3) >= 2 and abs(nums[0] - nums[3]) >= 4.
+# Hence, a valid answer is [0,3].
+# [3,0] is also a valid answer. 
+first = nums[0] 
+last = nums[len(nums)-1] 
+
+ 
