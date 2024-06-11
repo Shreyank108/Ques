@@ -1383,4 +1383,13 @@ s = "string"
 #                     break
 #             if isChampion:
 #                 return i
-#         return -1 
+#         return -1  
+
+
+
+count = Counter(nums)
+result = 0
+for num, cnt in count.items():
+    if cnt == 2:
+        result ^= num
+return result
