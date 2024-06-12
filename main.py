@@ -1387,9 +1387,14 @@ s = "string"
 
 
 
-count = Counter(nums)
-result = 0
-for num, cnt in count.items():
-    if cnt == 2:
-        result ^= num
-return result
+# count = Counter(nums)
+# result = 0
+# for num, cnt in count.items():
+#     if cnt == 2:
+#         result ^= num
+# return result 
+
+# Sort the color  
+# nums =[1,0,2,3,4,0,2] 
+# nums.sort() 
+# print(nums)
