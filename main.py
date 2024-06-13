@@ -1398,3 +1398,13 @@ s = "string"
 # nums =[1,0,2,3,4,0,2] 
 # nums.sort() 
 # print(nums)
+
+
+class Solution:
+    def minMovesToSeat(self, seats: List[int], students: List[int]) -> int:
+        nawab =0 
+        seats.sort() 
+        students.sort() 
+        for i in range(len(students)): 
+            nawab+=abs(students[i]-seats[i]) 
+        return nawab
