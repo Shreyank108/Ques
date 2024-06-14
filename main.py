@@ -1407,4 +1407,14 @@ s = "string"
 #         students.sort() 
 #         for i in range(len(students)): 
 #             nawab+=abs(students[i]-seats[i]) 
-#         return nawab
+#         return nawab 
+
+        # nums.sort()
+        # numTracker = 0
+        # minIncreament = 0
+
+        # for num in nums:
+        #     numTracker = max(numTracker, num)
+        #     minIncreament += numTracker - num
+        #     numTracker += 1
+        # return minIncreament
