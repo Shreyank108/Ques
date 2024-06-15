@@ -1418,3 +1418,11 @@ s = "string"
         #     minIncreament += numTracker - num
         #     numTracker += 1
         # return minIncreament
+        
+ans = 0
+        for i in range(26):
+            letter = chr(97 + i)
+            if letter in word and letter.upper() in word:
+                ans += 1
+                
+        return ans
