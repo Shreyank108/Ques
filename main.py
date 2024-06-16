@@ -1419,10 +1419,16 @@ s = "string"
         #     numTracker += 1
         # return minIncreament
         
-ans = 0
-        for i in range(26):
-            letter = chr(97 + i)
-            if letter in word and letter.upper() in word:
-                ans += 1
+# ans = 0
+#         for i in range(26):
+#             letter = chr(97 + i)
+#             if letter in word and letter.upper() in word:
+#                 ans += 1
                 
-        return ans
+#         return ans
+
+# rev=s[::-1]
+#         for i in range(len(s)-1):
+#             if(s[i:i+2] in rev):
+#                 return True
+#         return False
