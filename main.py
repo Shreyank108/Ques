@@ -1432,3 +1432,12 @@ s = "string"
 #             if(s[i:i+2] in rev):
 #                 return True
 #         return False
+
+x = 18
+count =0
+for i in str(x): 
+        count +=int(i) 
+if x%count==0: 
+        print(True) 
+else : 
+        print(False)
