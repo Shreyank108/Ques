@@ -1461,3 +1461,30 @@ s = "string"
 #                 res += value
 
 #         return res
+
+nums=[3,3,3]
+if nums[0]+nums[2] > nums[1]: 
+        if nums[1]+nums[2] >nums[0] : 
+                if nums[0]+nums[1] > nums[2]:
+                        p={} 
+                        for i in nums: 
+                                if i in p: 
+                                        p[i]+=1 
+                                else :
+                                        p[i]=1    
+                        for i in p: 
+                                if len(p) ==2 : 
+                                        return "isosceles" 
+                                elif len(p)==1: 
+                                        return "equilateral" 
+                                else : 
+                                        return "scalene" 
+                else : 
+                        return "none"                
+        else : 
+                return "none" 
+
+                
+                
+else : 
+        return "none"
