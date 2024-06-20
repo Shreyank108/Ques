@@ -1462,29 +1462,45 @@ s = "string"
 
 #         return res
 
-nums=[3,3,3]
-if nums[0]+nums[2] > nums[1]: 
-        if nums[1]+nums[2] >nums[0] : 
-                if nums[0]+nums[1] > nums[2]:
-                        p={} 
-                        for i in nums: 
-                                if i in p: 
-                                        p[i]+=1 
-                                else :
-                                        p[i]=1    
-                        for i in p: 
-                                if len(p) ==2 : 
-                                        return "isosceles" 
-                                elif len(p)==1: 
-                                        return "equilateral" 
-                                else : 
-                                        return "scalene" 
-                else : 
-                        return "none"                
-        else : 
-                return "none" 
+# nums=[3,3,3]
+# if nums[0]+nums[2] > nums[1]: 
+#         if nums[1]+nums[2] >nums[0] : 
+#                 if nums[0]+nums[1] > nums[2]:
+#                         p={} 
+#                         for i in nums: 
+#                                 if i in p: 
+#                                         p[i]+=1 
+#                                 else :
+#                                         p[i]=1    
+#                         for i in p: 
+#                                 if len(p) ==2 : 
+#                                         return "isosceles" 
+#                                 elif len(p)==1: 
+#                                         return "equilateral" 
+#                                 else : 
+#                                         return "scalene" 
+#                 else : 
+#                         return "none"                
+#         else : 
+#                 return "none" 
 
                 
                 
-else : 
-        return "none"
+# else : 
+#         return "none"
+
+
+ n = len(nums1)
+        m = len(nums2)
+
+        c1 = 0
+        c2 = 0
+
+        for i in range(n) :
+            if nums1[i] in nums2 :
+                c1 += 1
+        for i in range(m) :
+            if nums2[i] in nums1 :
+                c2 += 1
+                
+        return [c1, c2]
