@@ -1518,4 +1518,15 @@ s = "string"
 #     # Select only the 'name' column from the result DataFrame and rename it as 'Customers'
 #     result_df = result_df[['name']].rename(columns={'name': 'Customers'})
     
-#     return result_df
+#     return result_df 
+
+var createHelloWorld = function() {
+    
+    return function(...args) {
+        return 'Hello World'
+    }
+}
+
+
+  const f = createHelloWorld()
+  f() // "Hello World"
