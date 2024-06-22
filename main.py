@@ -1520,13 +1520,13 @@ s = "string"
     
 #     return result_df 
 
-var createHelloWorld = function() {
+# var createHelloWorld = function() {
     
-    return function(...args) {
-        return 'Hello World'
-    }
-}
+#     return function(...args) {
+#         return 'Hello World'
+#     }
+# }
 
 
-  const f = createHelloWorld()
-  f() // "Hello World"
+#   const f = createHelloWorld()
+#   f() // "Hello World"
