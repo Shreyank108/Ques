@@ -1529,4 +1529,10 @@ s = "string"
 
 
 #   const f = createHelloWorld()
-#   f() // "Hello World"
+#   f() // "Hello 
+
+
+
+let count =0   
+count ++ 
+return count 
