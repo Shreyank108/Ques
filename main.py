@@ -1552,17 +1552,31 @@ s = "string"
 # };
 
 
- let count = init;
-    function increment(){
-        count++;
-        return count;
-    }
-    function decrement(){
-        count--;
-        return count;
-    }
-    function reset(){
-        count = init;
-        return count;
-    }
-    return { increment, decrement, reset };
+#  let count = init;
+#     function increment(){
+#         count++;
+#         return count;
+#     }
+#     function decrement(){
+#         count--;
+#         return count;
+#     }
+#     function reset(){
+#         count = init;
+#         return count;
+#     }
+#     return { increment, decrement, reset };
+
+
+/**
+ * @param {number[]} arr
+ * @param {Function} fn
+ * @return {number[]}
+ */
+var map = function(arr, fn) {
+  var mappedArray = [];
+  for (var i = 0; i < arr.length; i++) {
+    mappedArray.push(fn(arr[i], i));
+  }
+  return mappedArray;
+};
