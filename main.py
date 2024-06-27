@@ -1579,4 +1579,14 @@ s = "string"
 #     mappedArray.push(fn(arr[i], i));
 #   }
 #   return mappedArray;
-# };
+# }; 
+
+var filter = function(arr, fn) {
+    var filteredArr = [];
+    for (var i = 0; i < arr.length; i++) {
+        if (fn(arr[i], i)) {
+            filteredArr.push(arr[i]);
+        }
+    }
+    return filteredArr;
+};
