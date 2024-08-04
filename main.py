@@ -1522,35 +1522,48 @@ s = "string"
 
 # print(min(p))
     
-from typing import Optional
+# from typing import Optional
 
-# Definition for singly-linked list.
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+# # Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
 
-class Solution:
-    def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:  
-        dummy = ListNode()  # Create a dummy node
-        current = dummy     # Set current to the dummy node
+# class Solution:
+#     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:  
+#         dummy = ListNode()  # Create a dummy node
+#         current = dummy     # Set current to the dummy node
         
-        # Traverse both lists
-        while list1 and list2: 
-            if list1.val < list2.val: 
-                current.next = list1  # Link current node to list1
-                list1 = list1.next     # Move to the next node in list1
-            else: 
-                current.next = list2  # Link current node to list2
-                list2 = list2.next     # Move to the next node in list2
+#         # Traverse both lists
+#         while list1 and list2: 
+#             if list1.val < list2.val: 
+#                 current.next = list1  # Link current node to list1
+#                 list1 = list1.next     # Move to the next node in list1
+#             else: 
+#                 current.next = list2  # Link current node to list2
+#                 list2 = list2.next     # Move to the next node in list2
             
-            current = current.next  # Move current to the last node in the merged list
+#             current = current.next  # Move current to the last node in the merged list
 
-        # If there are remaining nodes in either list, append them
-        if list1: 
-            current.next = list1   
-        elif list2: 
-            current.next = list2   
+#         # If there are remaining nodes in either list, append them
+#         if list1: 
+#             current.next = list1   
+#         elif list2: 
+#             current.next = list2   
 
-        return dummy.next
+#         return dummy.next
   
+nums = [4, 5, 6, 7, 0, 1, 2]
+target = 0
+found = False  # Flag to check if the target is found
+
+for i in range(len(nums)):
+    if nums[i] == target:
+        print(i)  # Print the index of the target
+        found = True  # Set the flag to True
+        break  # Exit the loop once the target is found
+
+if not found:
+    print(-1) 
+        
