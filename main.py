@@ -1554,16 +1554,33 @@ s = "string"
 
 #         return dummy.next
   
-nums = [4, 5, 6, 7, 0, 1, 2]
-target = 0
-found = False  # Flag to check if the target is found
+# nums = [4, 5, 6, 7, 0, 1, 2]
+# target = 0
+# found = False  # Flag to check if the target is found
 
-for i in range(len(nums)):
-    if nums[i] == target:
-        print(i)  # Print the index of the target
-        found = True  # Set the flag to True
-        break  # Exit the loop once the target is found
+# for i in range(len(nums)):
+#     if nums[i] == target:
+#         print(i)  # Print the index of the target
+#         found = True  # Set the flag to True
+#         break  # Exit the loop once the target is found
 
-if not found:
-    print(-1) 
+# if not found:
+#     print(-1) 
         
+# dummy = ListNode(0)
+#         dummy.next = head
+        
+#         # Initialize current pointer
+#         current = dummy
+        
+#         # Traverse the list
+#         while current.next is not None:
+#             if current.next.val == val:
+#                 # Skip the node with the value to remove
+#                 current.next = current.next.next
+#             else:
+#                 # Move to the next node only if we didn't remove the current one
+#                 current = current.next
+        
+#         # Return the next of dummy, which is the new head
+#         return dummy.next
