@@ -1583,4 +1583,48 @@ s = "string"
 #                 current = current.next
         
 #         # Return the next of dummy, which is the new head
-#         return dummy.next
+#         return dummy.next 
+
+# nums = [1,1,1,2,2,3]
+# p={}
+# for i in nums: 
+#         if i in p: 
+#                 p[i]+=1     
+#         else : 
+#                 p[i]=1   
+# result =[] 
+# for key , value in p.items(): 
+#         if value >=2: 
+#                 result.append(key) 
+#                 result.append(key) 
+#         else : 
+#               result.append(key) 
+# print(result)
+                
+# if len(nums) <= 2:
+#         print(len(nums))
+# k = 2  
+# for i in range(2, len(nums)):
+#         if nums[i] != nums[k-2]:
+#          nums[k] = nums[i]
+#         k += 1
+# print(nums)
+# print(k) 
+
+
+# p={"I":1,"V":5,"X":10,"L":50,"C":100,"D":500,"M":1000} 
+# s = "III"
+# l=[]   
+# sum = 0   
+# for key,value in p.items(): 
+#         if s.split("") in p: 
+#                 l.append(value)   
+# print(l) 
+
+
+# Input: 
+strs = ["flower","flow","flight"]
+# Output: "fl"    
+min_string = min(strs,key=len) 
+print(min_string)
+for i in 
