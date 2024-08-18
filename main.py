@@ -1623,8 +1623,44 @@ s = "string"
 
 
 # Input: 
-strs = ["flower","flow","flight"]
-# Output: "fl"    
-min_string = min(strs,key=len) 
-print(min_string)
-for i in 
+# strs = ["flower","flow","flight"]
+# # Output: "fl"    
+# min_string = min(strs,key=len) 
+# print(min_string)
+# for i in 
+
+# Input: 
+# n = 2
+# Output: 12 
+
+# n=1
+# result =[] 
+# i=1  
+# if n==1 : 
+#       result.append(1)
+# while len(result) < n-1: 
+#         if i%2==0 or i%3==0 or i%5==0 : 
+#                 result.append(i) 
+#         i+=1   
+# print( result[-1])
+
+
+# Input: 
+nums = [1,2,3,4,10]  
+l1=[] 
+l2=[] 
+for i in nums: 
+        if i< 10 : 
+                l1.append(i) 
+        if i >= 10 : 
+                l2.append(i) 
+print(l1)
+print(l2)
+print(sum(l1)) 
+print(sum(l2)) 
+if l1 > l2 or l2 > l1 : 
+        print(True) 
+elif l1 == l2 : 
+        print(False)
+else : 
+        print(False)
