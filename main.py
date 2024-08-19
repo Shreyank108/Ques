@@ -1646,21 +1646,42 @@ s = "string"
 
 
 # Input: 
-nums = [1,2,3,4,10]  
-l1=[] 
-l2=[] 
-for i in nums: 
-        if i< 10 : 
-                l1.append(i) 
-        if i >= 10 : 
-                l2.append(i) 
-print(l1)
-print(l2)
-print(sum(l1)) 
-print(sum(l2)) 
-if l1 > l2 or l2 > l1 : 
-        print(True) 
-elif l1 == l2 : 
-        print(False)
-else : 
-        print(False)
+# nums = [1,2,3,4,10]  
+# l1=[] 
+# l2=[] 
+# for i in nums: 
+#         if i< 10 : 
+#                 l1.append(i) 
+#         if i >= 10 : 
+#                 l2.append(i) 
+# sum_of_l1= sum(l1) 
+# sum_of_l2= sum(l2) 
+# if sum_of_l1 > sum_of_l2 or sum_of_l2 > sum_of_l1 : 
+#         print(True) 
+# else : 
+#         print(False) 
+
+
+# s = "dart"
+# k = 3
+# p=""
+# l=[] 
+# if s[k] == s[0]: 
+#         print(s) 
+# else :
+#         for i in s : 
+#                 if i !=s[k]: 
+#                         l.append(i) 
+#         print(s[k]+"".join(l)) 
+
+# Input: 
+strs = ["eat","tea","tan","ate","nat","bat"]
+# Output: [["bat"],["nat","tan"],["ate","eat","tea"]] 
+map ={} 
+for i in strs:
+        sorted_strs_elements = "".join(sorted(i)) 
+        if sorted_strs_elements not in map: 
+                map[sorted_strs_elements] = [] 
+        map[sorted_strs_elements].append(i) 
+result = map.values() 
+print(result)
