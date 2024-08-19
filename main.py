@@ -1677,11 +1677,10 @@ s = "string"
 # Input: 
 strs = ["eat","tea","tan","ate","nat","bat"]
 # Output: [["bat"],["nat","tan"],["ate","eat","tea"]] 
-map ={} 
-for i in strs:
-        sorted_strs_elements = "".join(sorted(i)) 
-        if sorted_strs_elements not in map: 
-                map[sorted_strs_elements] = [] 
-        map[sorted_strs_elements].append(i) 
-result = map.values() 
-print(result)
+map={} 
+for i in strs: 
+        sorted_word= "".join(sorted(i))
+        if sorted_word not in map : 
+                map[sorted_word]=[] 
+        map[sorted_word].append(i)  
+print(list(map.values()))
