@@ -1675,12 +1675,28 @@ s = "string"
 #         print(s[k]+"".join(l)) 
 
 # Input: 
-strs = ["eat","tea","tan","ate","nat","bat"]
-# Output: [["bat"],["nat","tan"],["ate","eat","tea"]] 
-map={} 
-for i in strs: 
-        sorted_word= "".join(sorted(i))
-        if sorted_word not in map : 
-                map[sorted_word]=[] 
-        map[sorted_word].append(i)  
-print(list(map.values()))
+# strs = ["eat","tea","tan","ate","nat","bat"]
+# # Output: [["bat"],["nat","tan"],["ate","eat","tea"]] 
+# map={} 
+# for i in strs: 
+#         sorted_word= "".join(sorted(i))
+#         if sorted_word not in map : 
+#                 map[sorted_word]=[] 
+#         map[sorted_word].append(i)  
+# print(list(map.values()))
+
+# s="a1b10c3d5" 
+# #output = "abbbbbbbbbb" 
+
+# i=0    
+# result=""
+# while i < len(s): 
+#       char = s[i] 
+#       i+=1   
+#       num_string="" 
+#       while i<len(s) and s[i].isdigit(): 
+#               num_string+=s[i] 
+#               i+=1   
+#       int_conversion= int(num_string) 
+#       result+=char*int_conversion 
+# print(result)
