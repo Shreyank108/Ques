@@ -1703,22 +1703,23 @@ s = "string"
 #       result+=char*int_conversion 
 # print(result)
 
-a=1 
-a=bin(5)[2:] 
-l=[]
-for i in str(a): 
-        l.append(i)
-print(l) 
-m=[]
-for i in l: 
-        if i == '0': 
-                m.append("1")
-        elif i=='1': 
-                m.append('0') 
-print(m)
-s=""
-for i in m: 
-        s+=i         
-print(s) 
-therealvalue = int(s,2) 
-print(therealvalue)
+# a=1 
+# a=bin(5)[2:] 
+# l=[]
+# for i in str(a): 
+#         l.append(i)
+# print(l) 
+# m=[]
+# for i in l: 
+#         if i == '0': 
+#                 m.append("1")
+#         elif i=='1': 
+#                 m.append('0') 
+# print(m)
+# s=""
+# for i in m: 
+#         s+=i         
+# print(s) 
+# therealvalue = int(s,2) 
+# print(therealvalue) 
+
