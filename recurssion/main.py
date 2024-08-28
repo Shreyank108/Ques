@@ -100,17 +100,40 @@
 #     print("not Anagram")  
 
 # n=5   
-# op =12345  
+# op =12345   
 
 # n=4  
-# op=1234   
+# op=1234    
+
+# for i in range(1,n+1): 
+#     print(i,end="") 
+
+# result=0
+# for i in range(1,n+1): 
+#     result = result*10+i              
+# print(result)
 
 
 
 
 
-# multiply two number  
+# multiply two number   
+# count=0
+# a=int(input("enter 1st number")) 
+# b=int(input("enter 2st number"))  
+# for i in range(a):
+#         count+=b          
+# print(count)
 
 # divide two number   
 
-# 6
+# count = 0
+# a = int(input("Enter the 1st number: "))
+# b = int(input("Enter the 2nd number: "))
+
+# while a >= b:
+#     a = a - b
+#     count += 1
+
+# print("Quotient:", count)
+# print("Remainder:", a)
