@@ -114,7 +114,9 @@
 # print(result)
 
 
-
+# for i in range(1,n+1): 
+#     result =result*10+i           
+# print(result)
 
 
 # multiply two number   
@@ -127,13 +129,16 @@
 
 # divide two number   
 
-# count = 0
-# a = int(input("Enter the 1st number: "))
-# b = int(input("Enter the 2nd number: "))
+count = 0
+a = int(input("Enter the 1st number: "))
+b = int(input("Enter the 2nd number: "))
 
-# while a >= b:
-#     a = a - b
-#     count += 1
+while a >= b:
+    a = a - b
+    count += 1
 
-# print("Quotient:", count)
-# print("Remainder:", a)
+print("Quotient:", count)
+print("Remainder:", a)   
+ 
+
+
