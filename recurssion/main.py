@@ -129,16 +129,55 @@
 
 # divide two number   
 
-count = 0
-a = int(input("Enter the 1st number: "))
-b = int(input("Enter the 2nd number: "))
-
-while a >= b:
-    a = a - b
-    count += 1
-
-print("Quotient:", count)
-print("Remainder:", a)   
+# l=[4,3,-7,0,2,3,1,-3,6,0] 
+# sum = 0   
+# maximum = float("-inf") 
+# for i in range(0,len(l)):  
+#     sum += l[i]
+#     if l[i]>maximum:
+#         maximum = l[i]
+#     if sum > maximum: 
+#         maximum =sum  
+#     if sum < 0: 
+#         sum =0  
+# print(sum)
+# print(maximum)
+    
  
+# a="shsrteeyaank" 
+# l=[]
+# for i in a: 
+#     l.append(i) 
+# print(l)
+# p={}
+# for i in l: 
+#     if i in p: 
+#         p[i]+=1   
+#     else : 
+#         p[i]=1  
+# print(p) 
+# m=[]
+# s=""
+# for  key,value in p.items(): 
+#     print (key ,"occurs", value) 
+# for i , j in p.items(): 
+#     if j==1 : 
+#         s+=i   
+# print(s)
+
+
+# l=[1,1,2,3,2,3,4,3,]  
+# p={} 
+# for i in l: 
+#     if i in p: 
+#         p[i]+=1 
+#     else : 
+#         p[i]=1 
+# print(p)
+# for key,value in p.items(): 
+#    k= max(p.values()) 
+# print(k)     
+ 
+
 
 
