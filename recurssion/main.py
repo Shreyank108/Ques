@@ -179,29 +179,41 @@
 # print(k)     
  
 # Input:
-s = "zbax"
-k = 2
+# s = "zbax"
+# k = 2
 
-# Mapping of letters to their corresponding positions in the alphabet
-p = {
-    'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': 6, 'g': 7, 'h': 8, 'i': 9, 
-    'j': 10, 'k': 11, 'l': 12, 'm': 13, 'n': 14, 'o': 15, 'p': 16, 'q': 17, 
-    'r': 18, 's': 19, 't': 20, 'u': 21, 'v': 22, 'w': 23, 'x': 24, 'y': 25, 'z': 26
-}
+# # Mapping of letters to their corresponding positions in the alphabet
+# p = {
+#     'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': 6, 'g': 7, 'h': 8, 'i': 9, 
+#     'j': 10, 'k': 11, 'l': 12, 'm': 13, 'n': 14, 'o': 15, 'p': 16, 'q': 17, 
+#     'r': 18, 's': 19, 't': 20, 'u': 21, 'v': 22, 'w': 23, 'x': 24, 'y': 25, 'z': 26
+# }
 
-converted_num = ""
-for i in s:
-    converted_num += str(p[i])
+# converted_num = ""
+# for i in s:
+#     converted_num += str(p[i])
     
-print("Converted String to Number:", converted_num)
+# print("Converted String to Number:", converted_num)
 
-for j in range(k):
-    current_sum = sum(int(digit) for digit in converted_num)
+# for j in range(k):
+#     current_sum = sum(int(digit) for digit in converted_num)
 
-    converted_num = str(current_sum)
-    print(f"After transformation {j+1}: {converted_num}")
+#     converted_num = str(current_sum)
+#     print(f"After transformation {j+1}: {converted_num}")
 
-print("Final Output:", converted_num)
+# print("Final Output:", converted_num) 
+
+
+nums = [2,1,3,5,6]
+k = 5
+multiplier = 2
+
+for i in range(k): 
+    p=min(nums)
+    m=p*multiplier 
+    l=nums.index(p) 
+    nums[l] = m
+print(nums)
 
  
 
