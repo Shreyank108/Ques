@@ -204,16 +204,40 @@
 # print("Final Output:", converted_num) 
 
 
-nums = [2,1,3,5,6]
-k = 5
-multiplier = 2
+# nums = [2,1,3,5,6]
+# k = 5
+# multiplier = 2
 
-for i in range(k): 
-    p=min(nums)
-    m=p*multiplier 
-    l=nums.index(p) 
-    nums[l] = m
-print(nums)
+# for i in range(k): 
+#     p=min(nums)
+#     m=p*multiplier 
+#     l=nums.index(p) 
+#     nums[l] = m
+# print(nums)
 
+# word1= "abc" 
+# word2="pq"
+# c="" 
+# if len(word1)>len(word2): 
+#     for i in range(len(word1)-1): 
+#         c+=word1[i]+word2[i] 
+# print(c)
  
+# n = 13
+# k = 4 
+# p=bin(n) 
+# p2=bin(k) 
+# print(int(p+p2))
+
+
+# a='abc' 
+# b='pqr' 
+# # c=""
+# # for i in range(max(len(a),len(b))): 
+# #     c+=a[i]+b[i]
+# # print(c)
+# p=[] 
+# for i in range(2*len(a),2): 
+#     p.append(a[i]) 
+# print(p)
 
