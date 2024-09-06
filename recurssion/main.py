@@ -239,5 +239,28 @@
 # p=[] 
 # for i in range(2*len(a),2): 
 #     p.append(a[i]) 
-# print(p)
+# print(p) 
+
+# Input:
+
+nums = [7,8,3,4,15,13,4,1]
+new = []
+
+while len(nums) > 1: 
+    nums.sort() 
+    maxi = nums[-1] 
+    mini = nums[0] 
+    avg = (maxi + mini) / 2  # Use / for floating-point division
+    new.append(avg) 
+    nums.remove(maxi)
+    nums.remove(mini)
+
+# If there's one element left, calculate the average of the remaining number
+if len(nums) == 1:
+    new.append(nums[0])
+
+# Compute the final average of the averages in the new list
+final_avg = sum(new) / len(new)
+print(final_avg)
+
 
