@@ -264,14 +264,47 @@
 # print(final_avg)
 
 
-grid = [[1],[2],[3]] 
-flag = False
-for i in range(len(grid)-1): 
-    if grid[i] == grid[i+1] : 
-        flag =True
-    else : 
-        flag =False                      
-if flag == False : 
-    print(False) 
-else : 
-    print(True)
+# grid = [[1],[2],[3]] 
+# flag = False
+# for i in range(len(grid)-1): 
+#     if grid[i] == grid[i+1] : 
+#         flag =True
+#     else : 
+#         flag =False                      
+# if flag == False : 
+#     print(False) 
+# else : 
+#     print(True)
+
+
+# k = 6 
+# l=[2,12,1,11,4,5]
+
+# count =0
+# for i in l:  
+#     p=bin(i)[2:] 
+#     count+=int(p,2)
+# print(count) 
+
+
+# s="Hello i am Shreyank" 
+# p=s.split(" ") 
+# print(" ".join(p[::-1]))  
+
+# s="Hello i am Shreyank"  
+# p=s.split(" ")
+# k=[]
+# for i in p: 
+#     m=i[::-1]
+ 
+#     k.append(m) 
+# print(" ".join(k)) 
+
+s="Hello i am Shreyank"   
+p=s.split(" ")
+k=[]
+for i in p: 
+    m=i[::-1]
+    
+    k.append(m) 
+print(" ".join(k[::-1]))
