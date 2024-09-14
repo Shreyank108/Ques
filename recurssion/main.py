@@ -300,11 +300,36 @@
 #     k.append(m) 
 # print(" ".join(k)) 
 
-s="Hello i am Shreyank"   
-p=s.split(" ")
-k=[]
-for i in p: 
-    m=i[::-1]
+# s="Hello i am Shreyank"   
+# p=s.split(" ")
+# k=[]
+# for i in p: 
+#     m=i[::-1]
     
-    k.append(m) 
-print(" ".join(k[::-1]))
+#     k.append(m) 
+# print(" ".join(k[::-1]))
+
+
+# Input: 
+# date = "2024-09-13" 
+
+# p = date.split("-")  
+# l = []  
+
+# for i in p:
+#     convert_to_binary = bin(int(i))[2:]  
+#     l.append(convert_to_binary)
+
+# print("-".join(l))  
+
+class Solution:
+    def maximumStrongPairXor(self, nums: List[int]) -> int:
+        maxXor = 0
+        n = len(nums)
+        for start in range(n):
+            for end in range(start, n):
+                x = nums[start]
+                y = nums[end]
+                if abs(x-y) <= min(x,y) and x^y > maxXor:
+                    maxXor = x^y
+        return maxXor
