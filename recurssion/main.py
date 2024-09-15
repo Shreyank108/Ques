@@ -322,14 +322,31 @@
 
 # print("-".join(l))  
 
-class Solution:
-    def maximumStrongPairXor(self, nums: List[int]) -> int:
-        maxXor = 0
-        n = len(nums)
-        for start in range(n):
-            for end in range(start, n):
-                x = nums[start]
-                y = nums[end]
-                if abs(x-y) <= min(x,y) and x^y > maxXor:
-                    maxXor = x^y
-        return maxXor
+# class Solution:
+#     def maximumStrongPairXor(self, nums: List[int]) -> int:
+#         maxXor = 0
+#         n = len(nums)
+#         for start in range(n):
+#             for end in range(start, n):
+#                 x = nums[start]
+#                 y = nums[end]
+#                 if abs(x-y) <= min(x,y) and x^y > maxXor:
+#                     maxXor = x^y
+#         return maxXor
+
+
+
+# Input:
+nums = [1,2,1,3,2,5]
+# Output: [3,5] 
+p={}
+for i in nums: 
+    if i in p: 
+        p[i]+=1  
+    else : 
+        p[i]=1   
+k=[] 
+for key,value in p.items(): 
+    if value <2: 
+            k.append(key) 
+print(k)     
