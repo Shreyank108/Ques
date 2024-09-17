@@ -337,16 +337,37 @@
 
 
 # Input:
-nums = [1,2,1,3,2,5]
-# Output: [3,5] 
-p={}
-for i in nums: 
-    if i in p: 
-        p[i]+=1  
-    else : 
-        p[i]=1   
-k=[] 
-for key,value in p.items(): 
+# nums = [1,2,1,3,2,5]
+# # Output: [3,5] 
+# p={}
+# for i in nums: 
+#     if i in p: 
+#         p[i]+=1  
+#     else : 
+#         p[i]=1   
+# k=[] 
+# for key,value in p.items(): 
+#     if value <2: 
+#             k.append(key) 
+# print(k)     
+
+s1 = "this apple is sweet"
+s2 = "this apple is sour"
+spliteds1 = s1.split()
+s2splited = s2.split()
+new_word = spliteds1 + s2splited
+p = {}
+
+for i in new_word:
+    if i not in p:
+        p[i] = 1  
+    else:
+        p[i] += 1  
+
+print(p) 
+l=[]
+for key,value in p.items():  
     if value <2: 
-            k.append(key) 
-print(k)     
+        l.append(key)  
+print(l) 
+        
