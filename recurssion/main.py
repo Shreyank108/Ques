@@ -351,23 +351,42 @@
 #             k.append(key) 
 # print(k)     
 
-s1 = "this apple is sweet"
-s2 = "this apple is sour"
-spliteds1 = s1.split()
-s2splited = s2.split()
-new_word = spliteds1 + s2splited
-p = {}
+# s1 = "this apple is sweet"
+# s2 = "this apple is sour"
+# spliteds1 = s1.split()
+# s2splited = s2.split()
+# new_word = spliteds1 + s2splited
+# p = {}
 
-for i in new_word:
-    if i not in p:
-        p[i] = 1  
-    else:
-        p[i] += 1  
+# for i in new_word:
+#     if i not in p:
+#         p[i] = 1  
+#     else:
+#         p[i] += 1  
 
-print(p) 
-l=[]
-for key,value in p.items():  
-    if value <2: 
-        l.append(key)  
-print(l) 
+# print(p) 
+# l=[]
+# for key,value in p.items():  
+#     if value <2: 
+#         l.append(key)  
+# print(l) 
         
+ 
+# Input: 
+nums = [10,2]
+# Output: "210" 
+s="" 
+l=[]
+for i in nums: 
+    s+=str(i) 
+print(s)
+print(s)  
+for i in s: 
+    l.append(int(i)) 
+print(l)
+l.sort() 
+l=l[::-1]
+m=""
+for i in l: 
+    m+=str(i)[::-1]             
+print(m)
