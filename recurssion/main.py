@@ -372,21 +372,51 @@
 # print(l) 
         
  
-# Input: 
-nums = [10,2]
-# Output: "210" 
-s="" 
-l=[]
-for i in nums: 
-    s+=str(i) 
-print(s)
-print(s)  
-for i in s: 
-    l.append(int(i)) 
-print(l)
-l.sort() 
-l=l[::-1]
-m=""
-for i in l: 
-    m+=str(i)[::-1]             
-print(m)
+# # Input: 
+# nums = [10,2]
+# # Output: "210" 
+# s="" 
+# l=[]
+# for i in nums: 
+#     s+=str(i) 
+# print(s)
+# print(s)  
+# for i in s: 
+#     l.append(int(i)) 
+# print(l)
+# l.sort() 
+# l=l[::-1]
+# m=""
+# for i in l: 
+#     m+=str(i)[::-1]             
+# print(m)
+
+
+# class Solution:
+#     def diffWaysToCompute(self, s: str) -> List[int]:
+#         def dfs(i, j):
+#             if i == j:
+#                 return [int(s[i])]
+#             if i == j - 1 and s[j] not in '+-*':
+#                 return [int(s[i: j + 1])]
+#             if (i, j) in memo:
+#                 return memo[(i, j)]
+#             res = []
+#             for k in range(i, j + 1):
+#                 ch = s[k]
+#                 if ch in '+-*':
+#                     left = dfs(i, k - 1)
+#                     right = dfs(k + 1, j)
+#                     for l1 in left:
+#                         for l2 in right:
+#                             if ch == '+':
+#                                 res += [l1 + l2]
+#                             elif ch == '-':
+#                                 res += [l1 - l2]
+#                             elif ch == '*':
+#                                 res += [l1 * l2]
+#             memo[(i, j)] = res
+#             return memo[(i, j)]
+#         n = len(s)
+#         memo = dict()
+#         return dfs(0, n - 1)
