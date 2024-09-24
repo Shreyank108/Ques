@@ -442,24 +442,81 @@
 #                     pi[i] = 0
 #                     i += 1
 #         return pi[-1]
-class Solution:
-    def getReqNum(self, a, b, n):
-        gap = 0
-        while a <= n:
-            gap += min(n + 1, b) - a
-            a *= 10
-            b *= 10
-        return gap
+# class Solution:
+#     def getReqNum(self, a, b, n):
+#         gap = 0
+#         while a <= n:
+#             gap += min(n + 1, b) - a
+#             a *= 10
+#             b *= 10
+#         return gap
 
-    def findKthNumber(self, n: int, k: int) -> int:
-        num = 1
-        i = 1
-        while i < k:
-            req = self.getReqNum(num, num + 1, n)
-            if i + req <= k:
-                i += req
-                num += 1
-            else:
-                i += 1
-                num *= 10
-        return num
+#     def findKthNumber(self, n: int, k: int) -> int:
+#         num = 1
+#         i = 1
+#         while i < k:
+#             req = self.getReqNum(num, num + 1, n)
+#             if i + req <= k:
+#                 i += req
+#                 num += 1
+#             else:
+#                 i += 1
+#                 num *= 10
+#         return num
+
+
+# <!DOCTYPE html>
+# <html lang="en">
+# <head>
+#     <meta charset="UTF-8">
+#     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+#     <title>Consultation Form</title>
+#     <link rel="preconnect" href="https://fonts.googleapis.com">
+# <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+# <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+#     <link rel="stylesheet" href="style.css">
+# </head>
+# <body>
+#     <div id="main">
+#         <header>
+#             <h1>Book a Consultation</h1>
+#         </header>  
+#         <div id="extra">
+#             <div class="border">
+#                 <div class="box">
+#                     <video autoplay loop muted src="/assets/reels/reel2.mp4"></video>
+#                 </div>
+#             </div> 
+#             <div class="form">
+#                 <form action="#" method="POST">
+#                     <div class="form-group">
+#                         <label for="name">Full Name:</label>
+#                         <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+#                     </div>
+#                     <div class="form-group">
+#                         <label for="email">Email Address:</label>
+#                         <input type="email" id="email" name="email" placeholder="Enter your email" required>
+#                     </div>
+#                     <div class="form-group">
+#                         <label for="phone">Phone Number:</label>
+#                         <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+#                     </div>
+#                     <div class="form-group">
+#                         <label for="date">Preferred Date:</label>
+#                         <input type="date" id="date" name="date" required>
+#                     </div>
+#                     <div class="form-group">
+#                         <label for="time">Preferred Time:</label>
+#                         <input type="time" id="time" name="time" required>
+#                     </div>
+#                     <div class="form-group">
+#                         <label for="message">Additional Information:</label>
+#                         <textarea id="message" name="message" rows="4" placeholder="Enter any additional information or questions"></textarea>
+#                     </div>
+#                     <button type="submit" class="submit-btn">Submit</button>
+#                 </form>
+#             </div>
+#         </div>
+#     </div>
+# </body>
+# </html>
