@@ -1723,3 +1723,15 @@ s = "string"
 # therealvalue = int(s,2) 
 # print(therealvalue) 
 
+
+# Input: 
+s = "IceCreAm"
+# Output: "AceCreIm"
+l=['a','e','i','o','u','A','E','I','O','U']
+p=[]  
+for i in s : 
+        if i in l:  
+                p.append(i)
+                k=s.replace(i," ") 
+print(p) 
+print(k)
