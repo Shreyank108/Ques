@@ -1725,13 +1725,41 @@ s = "string"
 
 
 # Input: 
-s = "IceCreAm"
-# Output: "AceCreIm"
-l=['a','e','i','o','u','A','E','I','O','U']
-p=[]  
-for i in s : 
-        if i in l:  
-                p.append(i)
-                k=s.replace(i," ") 
-print(p) 
-print(k)
+# s = "IceCreAm"
+# # Output: "AceCreIm"
+# l=['a','e','i','o','u','A','E','I','O','U']
+# p=[]  
+# for i in s : 
+#         if i in l:  
+#                 p.append(i)
+#                 k=s.replace(i," ") 
+# print(p) 
+# print(k)
+
+
+# nums = [0,0,1,1,1,2,2,3,3,4]
+# if len(nums) == 0:
+#         return 0
+
+# i = 0  # first pointer
+# for j in range(1, len(nums)):
+#         if nums[j] != nums[i]:
+#                 i += 1
+#                 nums[i] = nums[j]
+    
+# print( i + 1) 
+
+
+# Input: 
+digits = [1,2,3]
+# Output: [1,2,4]
+s=""  
+for i in digits: 
+        s+=str(i) 
+print(s) 
+m=int(s)+1
+l=[]  
+for i in str(m): 
+   l.append(int(i))  
+print(l)     
+ 
