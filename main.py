@@ -1751,15 +1751,22 @@ s = "string"
 
 
 # Input: 
-digits = [1,2,3]
-# Output: [1,2,4]
-s=""  
-for i in digits: 
-        s+=str(i) 
-print(s) 
-m=int(s)+1
-l=[]  
-for i in str(m): 
-   l.append(int(i))  
-print(l)     
+# digits = [1,2,3]
+# # Output: [1,2,4]
+# s=""  
+# for i in digits: 
+#         s+=str(i) 
+# print(s) 
+# m=int(s)+1
+# l=[]  
+# for i in str(m): 
+#    l.append(int(i))  
+# print(l)     
  
+ 
+# nums = [3,0,1] 
+# p=0
+# for i in range(1,len(nums)+1): 
+#         if i not in nums: 
+#                 p+=i   
+# print(p)   
