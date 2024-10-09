@@ -1770,3 +1770,27 @@ s = "string"
 #         if i not in nums: 
 #                 p+=i   
 # print(p)   
+
+
+# Input: 
+s = "((()"
+# Output: 1 
+# comon ='()'
+# for i in range(len(s)):
+#         if comon in s : 
+#                 p= s.replace('()',"")   
+#                 s=p
+#         else : 
+#                 p=s
+# print(p)
+# print(len(p))           
+        
+stack =[] 
+for i in s: 
+        if i =='(': 
+                stack.append(i) 
+        elif i==')' and stack and stack[-1]=='(': 
+                stack.pop() 
+        else : 
+                stack.append(i) 
+print(len(stack))
