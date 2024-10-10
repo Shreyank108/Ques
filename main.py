@@ -1785,12 +1785,32 @@ s = "((()"
 # print(p)
 # print(len(p))           
         
-stack =[] 
-for i in s: 
-        if i =='(': 
-                stack.append(i) 
-        elif i==')' and stack and stack[-1]=='(': 
-                stack.pop() 
-        else : 
-                stack.append(i) 
-print(len(stack))
+# stack =[] 
+# for i in s: 
+#         if i =='(': 
+#                 stack.append(i) 
+#         elif i==')' and stack and stack[-1]=='(': 
+#                 stack.pop() 
+#         else : 
+#                 stack.append(i) 
+# print(len(stack))
+
+# result = []
+    
+#     def backtrack(curr_str, open_count, close_count):
+#         # If the current string has reached the maximum length, add it to the result
+#         if len(curr_str) == 2 * n:
+#             result.append(curr_str)
+#             return
+        
+#         # Add an opening parenthesis if we have less than n opening parentheses
+#         if open_count < n:
+#             backtrack(curr_str + "(", open_count + 1, close_count)
+        
+#         # Add a closing parenthesis if the number of closing is less than opening
+#         if close_count < open_count:
+#             backtrack(curr_str + ")", open_count, close_count + 1)
+    
+#     # Start the backtracking with an empty string and no parentheses used yet
+#     backtrack("", 0, 0)
+#     return result
