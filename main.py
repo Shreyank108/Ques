@@ -1816,41 +1816,69 @@ s = "((()"
 #     return result 
 
 
-num1 = 987
-num2 = 879
-num3 = 798
+# num1 = 987
+# num2 = 879
+# num3 = 798
 
-# num1  -> 0001 
-l=[] 
-l.append(num1)
-l.append(num2)
-l.append(num3)
+# # num1  -> 0001 
+# l=[] 
+# l.append(num1)
+# l.append(num2)
+# l.append(num3)
  
-l1=[]
-for i in l: 
-        p=""    
-        if i < 10:  
-                p+="000"+str(i)  
-        elif i <100: 
-                p+="00"+str(i) 
-        elif i< 1000:
-                p+="0"+str(i)
-        elif i < 9999: 
-                p+=str(i)
-        l1.append(p)    
-print(l1) 
-x=[] 
-num1 = l1[0]
-num2 = l1[1] 
-num3 = l1[2] 
+# l1=[]
+# for i in l: 
+#         p=""    
+#         if i < 10:  
+#                 p+="000"+str(i)  
+#         elif i <100: 
+#                 p+="00"+str(i) 
+#         elif i< 1000:
+#                 p+="0"+str(i)
+#         elif i < 9999: 
+#                 p+=str(i)
+#         l1.append(p)    
+# print(l1) 
+# x=[] 
+# num1 = l1[0]
+# num2 = l1[1] 
+# num3 = l1[2] 
 
-x.append(min(int(num1[0]),int(num2[0]),int(num3[0])))
-x.append(min(int(num1[1]),int(num2[1]),int(num3[1])))
-x.append(min(int(num1[2]),int(num2[2]),int(num3[2])))
-x.append(min(int(num1[3]),int(num2[3]),int(num3[3])))
+# x.append(min(int(num1[0]),int(num2[0]),int(num3[0])))
+# x.append(min(int(num1[1]),int(num2[1]),int(num3[1])))
+# x.append(min(int(num1[2]),int(num2[2]),int(num3[2])))
+# x.append(min(int(num1[3]),int(num2[3]),int(num3[3])))
  
-zeroes = ""
-for i in x: 
-        zeroes+=str(i)                 
-print(zeroes) 
-print(int(zeroes))
+# zeroes = ""
+# for i in x: 
+#         zeroes+=str(i)                 
+# print(zeroes) 
+# print(int(zeroes))
+
+
+coordinate1 = "a1"
+coordinate2 = "c3"
+
+p={
+    'a1': 'white', 'a2': 'black', 'a3': 'white', 'a4': 'black', 'a5': 'white', 'a6': 'black', 'a7': 'white', 'a8': 'black',
+    'b1': 'black', 'b2': 'white', 'b3': 'black', 'b4': 'white', 'b5': 'black', 'b6': 'white', 'b7': 'black', 'b8': 'white',
+    'c1': 'white', 'c2': 'black', 'c3': 'white', 'c4': 'black', 'c5': 'white', 'c6': 'black', 'c7': 'white', 'c8': 'black',
+    'd1': 'black', 'd2': 'white', 'd3': 'black', 'd4': 'white', 'd5': 'black', 'd6': 'white', 'd7': 'black', 'd8': 'white',
+    'e1': 'white', 'e2': 'black', 'e3': 'white', 'e4': 'black', 'e5': 'white', 'e6': 'black', 'e7': 'white', 'e8': 'black',
+    'f1': 'black', 'f2': 'white', 'f3': 'black', 'f4': 'white', 'f5': 'black', 'f6': 'white', 'f7': 'black', 'f8': 'white',
+    'g1': 'white', 'g2': 'black', 'g3': 'white', 'g4': 'black', 'g5': 'white', 'g6': 'black', 'g7': 'white', 'g8': 'black',
+    'h1': 'black', 'h2': 'white', 'h3': 'black', 'h4': 'white', 'h5': 'black', 'h6': 'white', 'h7': 'black', 'h8': 'white'
+}
+
+l=[]
+
+for key , value in p.items(): 
+        if coordinate1 == key  : 
+                l.append(value) 
+        if coordinate2 == key  : 
+                l.append(value)      
+       
+if l[0]==l[1]: 
+        print(True)
+else : 
+        print(False)          
