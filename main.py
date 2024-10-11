@@ -1813,4 +1813,44 @@ s = "((()"
     
 #     # Start the backtracking with an empty string and no parentheses used yet
 #     backtrack("", 0, 0)
-#     return result
+#     return result 
+
+
+num1 = 987
+num2 = 879
+num3 = 798
+
+# num1  -> 0001 
+l=[] 
+l.append(num1)
+l.append(num2)
+l.append(num3)
+ 
+l1=[]
+for i in l: 
+        p=""    
+        if i < 10:  
+                p+="000"+str(i)  
+        elif i <100: 
+                p+="00"+str(i) 
+        elif i< 1000:
+                p+="0"+str(i)
+        elif i < 9999: 
+                p+=str(i)
+        l1.append(p)    
+print(l1) 
+x=[] 
+num1 = l1[0]
+num2 = l1[1] 
+num3 = l1[2] 
+
+x.append(min(int(num1[0]),int(num2[0]),int(num3[0])))
+x.append(min(int(num1[1]),int(num2[1]),int(num3[1])))
+x.append(min(int(num1[2]),int(num2[2]),int(num3[2])))
+x.append(min(int(num1[3]),int(num2[3]),int(num3[3])))
+ 
+zeroes = ""
+for i in x: 
+        zeroes+=str(i)                 
+print(zeroes) 
+print(int(zeroes))
