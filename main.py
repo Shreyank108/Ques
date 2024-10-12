@@ -1856,29 +1856,37 @@ s = "((()"
 # print(int(zeroes))
 
 
-coordinate1 = "a1"
-coordinate2 = "c3"
+# coordinate1 = "a1"
+# coordinate2 = "c3"
 
-p={
-    'a1': 'white', 'a2': 'black', 'a3': 'white', 'a4': 'black', 'a5': 'white', 'a6': 'black', 'a7': 'white', 'a8': 'black',
-    'b1': 'black', 'b2': 'white', 'b3': 'black', 'b4': 'white', 'b5': 'black', 'b6': 'white', 'b7': 'black', 'b8': 'white',
-    'c1': 'white', 'c2': 'black', 'c3': 'white', 'c4': 'black', 'c5': 'white', 'c6': 'black', 'c7': 'white', 'c8': 'black',
-    'd1': 'black', 'd2': 'white', 'd3': 'black', 'd4': 'white', 'd5': 'black', 'd6': 'white', 'd7': 'black', 'd8': 'white',
-    'e1': 'white', 'e2': 'black', 'e3': 'white', 'e4': 'black', 'e5': 'white', 'e6': 'black', 'e7': 'white', 'e8': 'black',
-    'f1': 'black', 'f2': 'white', 'f3': 'black', 'f4': 'white', 'f5': 'black', 'f6': 'white', 'f7': 'black', 'f8': 'white',
-    'g1': 'white', 'g2': 'black', 'g3': 'white', 'g4': 'black', 'g5': 'white', 'g6': 'black', 'g7': 'white', 'g8': 'black',
-    'h1': 'black', 'h2': 'white', 'h3': 'black', 'h4': 'white', 'h5': 'black', 'h6': 'white', 'h7': 'black', 'h8': 'white'
-}
+# p={
+#     'a1': 'white', 'a2': 'black', 'a3': 'white', 'a4': 'black', 'a5': 'white', 'a6': 'black', 'a7': 'white', 'a8': 'black',
+#     'b1': 'black', 'b2': 'white', 'b3': 'black', 'b4': 'white', 'b5': 'black', 'b6': 'white', 'b7': 'black', 'b8': 'white',
+#     'c1': 'white', 'c2': 'black', 'c3': 'white', 'c4': 'black', 'c5': 'white', 'c6': 'black', 'c7': 'white', 'c8': 'black',
+#     'd1': 'black', 'd2': 'white', 'd3': 'black', 'd4': 'white', 'd5': 'black', 'd6': 'white', 'd7': 'black', 'd8': 'white',
+#     'e1': 'white', 'e2': 'black', 'e3': 'white', 'e4': 'black', 'e5': 'white', 'e6': 'black', 'e7': 'white', 'e8': 'black',
+#     'f1': 'black', 'f2': 'white', 'f3': 'black', 'f4': 'white', 'f5': 'black', 'f6': 'white', 'f7': 'black', 'f8': 'white',
+#     'g1': 'white', 'g2': 'black', 'g3': 'white', 'g4': 'black', 'g5': 'white', 'g6': 'black', 'g7': 'white', 'g8': 'black',
+#     'h1': 'black', 'h2': 'white', 'h3': 'black', 'h4': 'white', 'h5': 'black', 'h6': 'white', 'h7': 'black', 'h8': 'white'
+# }
 
-l=[]
+# l=[]
 
-for key , value in p.items(): 
-        if coordinate1 == key  : 
-                l.append(value) 
-        if coordinate2 == key  : 
-                l.append(value)      
+# for key , value in p.items(): 
+#         if coordinate1 == key  : 
+#                 l.append(value) 
+#         if coordinate2 == key  : 
+#                 l.append(value)      
        
-if l[0]==l[1]: 
-        print(True)
-else : 
-        print(False)          
+# if l[0]==l[1]: 
+#         print(True)
+# else : 
+#         print(False)          
+
+
+
+# l=[]
+# for i in range(1,len(height)): 
+#         if height[i-1]>threshold: 
+#                 l.append(i) 
+# return l 
