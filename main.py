@@ -1890,3 +1890,18 @@ s = "((()"
 #         if height[i-1]>threshold: 
 #                 l.append(i) 
 # return l 
+
+
+nums = [0,1,1,0] 
+p={}
+for i in nums: 
+        if i in p: 
+                p[i]+=1  
+        else : 
+                p[i]=1  
+print(p) 
+l=[]
+for key, value in p.items(): 
+        if value == 2 : 
+                l.append(key) 
+print(l)             
