@@ -1892,16 +1892,28 @@ s = "((()"
 # return l 
 
 
-nums = [0,1,1,0] 
-p={}
-for i in nums: 
-        if i in p: 
-                p[i]+=1  
-        else : 
-                p[i]=1  
-print(p) 
+# nums = [0,1,1,0] 
+# p={}
+# for i in nums: 
+#         if i in p: 
+#                 p[i]+=1  
+#         else : 
+#                 p[i]=1  
+# print(p) 
+# l=[]
+# for key, value in p.items(): 
+#         if value == 2 : 
+#                 l.append(key) 
+# print(l)             
+
+
+nums = [10,12,13,14]
 l=[]
-for key, value in p.items(): 
-        if value == 2 : 
-                l.append(key) 
-print(l)             
+i=0
+while nums[i] !< 10 :
+        digit = nums[i]%10 
+        nums=nums[i]//10   
+        sum=digit+nums 
+        l.append(sum) 
+        i+=1
+print(l)
