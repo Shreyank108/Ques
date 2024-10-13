@@ -1916,14 +1916,17 @@ s = "((()"
 #              l.append(sum) 
 # print(l)
 
+colors = [0,1,0,0,1]
 zeroes =0
 ones =0 
 for i in colors: 
         if i==0: 
-        zeroes+=1
+                zeroes+=1
         elif i==1: 
-        ones+=1    
+                ones+=1   
+print(zeroes)  
+print(ones)  
 if ones == (zeroes +1) :  
-        return zeroes  
+        print(zeroes)  
 else : 
-        return 0
+        print(0) 
