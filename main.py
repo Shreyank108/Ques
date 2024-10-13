@@ -1907,13 +1907,23 @@ s = "((()"
 # print(l)             
 
 
-nums = [10,12,13,14]
-l=[]
-i=0
-while nums[i] !< 10 :
-        digit = nums[i]%10 
-        nums=nums[i]//10   
-        sum=digit+nums 
-        l.append(sum) 
-        i+=1
-print(l)
+# nums = [10,12,13,14]
+# l=[]
+# for i in nums: 
+#         sum=0
+#         for j in str(i): 
+#              sum=+int(j) 
+#              l.append(sum) 
+# print(l)
+
+zeroes =0
+ones =0 
+for i in colors: 
+        if i==0: 
+        zeroes+=1
+        elif i==1: 
+        ones+=1    
+if ones == (zeroes +1) :  
+        return zeroes  
+else : 
+        return 0
