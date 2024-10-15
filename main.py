@@ -1931,3 +1931,14 @@ s = "((()"
 # else : 
 #         print(0)  
 
+player_picks = defaultdict(lambda: defaultdict(int))
+    for player, color in pick:
+        player_picks[player][color] += 1
+    winners = 0
+    for player in range(n):
+
+        for color in player_picks[player]:
+            if player_picks[player][color] > player:
+                winners += 1
+                break  
+    return winners
