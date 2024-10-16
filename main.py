@@ -1931,14 +1931,36 @@ s = "((()"
 # else : 
 #         print(0)  
 
-player_picks = defaultdict(lambda: defaultdict(int))
-    for player, color in pick:
-        player_picks[player][color] += 1
-    winners = 0
-    for player in range(n):
+# player_picks = defaultdict(lambda: defaultdict(int))
+#     for player, color in pick:
+#         player_picks[player][color] += 1
+#     winners = 0
+#     for player in range(n):
 
-        for color in player_picks[player]:
-            if player_picks[player][color] > player:
-                winners += 1
-                break  
-    return winners
+#         for color in player_picks[player]:
+#             if player_picks[player][color] > player:
+#                 winners += 1
+#                 break  
+#     return winners 
+ 
+ 
+# Input:
+# hours = [72,48,24,3]
+# #  [24,42,54,48]
+# Output: 2 
+# p=[] 
+# for i in range(1,11): 
+#     p.append(i*24) 
+# print(p)
+# l=[] 
+# j=1
+# for i in range(len(hours)-1): 
+#         l.append(hours[i]+hours[j]) 
+#         j+=1 
+# print(l)   
+# count =0   
+# for i in l: 
+#     if i in p: 
+#         count+=1  
+# print(count)
+    
