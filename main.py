@@ -1964,3 +1964,14 @@ s = "((()"
 #         count+=1  
 # print(count)
     
+# Input: 
+nums = [3,6,9]
+Output: 3 
+count =0 
+
+for i in nums: 
+    if (i+1) % 3 ==0: 
+        count+=1  
+    elif (i-1)% 3==0: 
+        count+=1   
+print(count)
