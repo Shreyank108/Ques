@@ -1965,13 +1965,29 @@ s = "((()"
 # print(count)
     
 # Input: 
-nums = [3,6,9]
-Output: 3 
-count =0 
+# nums = [3,6,9]
+# Output: 3 
+# count =0 
 
-for i in nums: 
-    if (i+1) % 3 ==0: 
-        count+=1  
-    elif (i-1)% 3==0: 
-        count+=1   
-print(count)
+# for i in nums: 
+#     if (i+1) % 3 ==0: 
+#         count+=1  
+#     elif (i-1)% 3==0: 
+#         count+=1   
+# print(count)
+
+# class Solution:
+#     def maxHeightOfTriangle(self, red: int, blue: int) -> int:
+#         def check(balls):
+#             row = 1
+#             while True:
+#                 color = (row + 1) % 2
+#                 balls[color] -= row
+#                 if balls[color] < 0:
+#                     return row - 1
+#                 row += 1
+        
+#         return max(
+#             check([red, blue]),
+#             check([blue, red]),
+#         )
