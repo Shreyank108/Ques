@@ -1991,3 +1991,33 @@ s = "((()"
 #             check([red, blue]),
 #             check([blue, red]),
 #         )
+
+class Solution:
+    def longestMonotonicSubarray(self, nums: List[int]) -> int:
+        if len(nums) == 0:
+            return 0
+
+        longest = 1
+        current = 1
+        direction = None
+
+        for i in range(1, len(nums)):
+            if nums[i] > nums[i-1]:
+                if direction == -1 or direction is None:
+                    direction = 1
+                    current = 2
+                else:
+                    current += 1
+            elif nums[i] < nums[i-1]:
+                if direction == 1 or direction is None:
+                    direction = -1
+                    current = 2
+                else:
+                    current += 1
+            else:  
+                current = 1
+
+            longest = max(longest, current)
+
+        return longest
+        
