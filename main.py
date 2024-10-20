@@ -1989,7 +1989,7 @@ s = "((()"
         
 #         return max(
 #             check([red, blue]),
-#             check([blue, red]),
+#             check([blue, red]),  
 #         )
 
 # class Solution:
@@ -2021,3 +2021,15 @@ s = "((()"
 
 #         return longest
         
+        
+# Input: 
+nums = [3,3]
+target = 6
+# Output: [0,1] 
+l=[]
+for i in range(len(nums)): 
+        for j in range(i+1,len(nums)): 
+                if nums[i]+nums[j] ==target: 
+                        l.append(i) 
+                        l.append(j) 
+print(l)
