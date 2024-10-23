@@ -2058,4 +2058,7 @@ s = "((()"
 #             else:
 #                 return False
 #         an = int(u) + int(l) + int(d)
-#         return len(word) >= 3 and an > 0 and c and v
+#         return len(word) >= 3 and an > 0 and c and v  
+
+# pos = {ch : i for i, ch in enumerate(t)}
+# return sum([abs(i - pos[s[i]]) for i in range(len(s))])
