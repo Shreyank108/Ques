@@ -2075,4 +2075,18 @@ s = "((()"
 #                 arr2.append(nums[i])
 #         arr1.extend(arr2)
 #         return arr1
-        
+
+class Solution:
+    def canMakeSquare(self, grid: List[List[str]]) -> bool:
+        import numpy as np
+        matrix = np.array(grid)
+        for i in range(0, len(matrix[0])):
+            for j in range(0, len(matrix)):
+                if i<2 and j<2:
+                    res=matrix[i:i+2,j:j+2]
+                    temp=[]
+                    for a in res:
+                        temp.extend(a)
+                    if temp.count('W')<=1 or temp.count('B')<=1:
+                        return True
+        return False
