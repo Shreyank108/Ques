@@ -2076,17 +2076,106 @@ s = "((()"
 #         arr1.extend(arr2)
 #         return arr1
 
-class Solution:
-    def canMakeSquare(self, grid: List[List[str]]) -> bool:
-        import numpy as np
-        matrix = np.array(grid)
-        for i in range(0, len(matrix[0])):
-            for j in range(0, len(matrix)):
-                if i<2 and j<2:
-                    res=matrix[i:i+2,j:j+2]
-                    temp=[]
-                    for a in res:
-                        temp.extend(a)
-                    if temp.count('W')<=1 or temp.count('B')<=1:
-                        return True
-        return False
+# class Solution:
+#     def canMakeSquare(self, grid: List[List[str]]) -> bool:
+#         import numpy as np
+#         matrix = np.array(grid)
+#         for i in range(0, len(matrix[0])):
+#             for j in range(0, len(matrix)):
+#                 if i<2 and j<2:
+#                     res=matrix[i:i+2,j:j+2]
+#                     temp=[]
+#                     for a in res:
+#                         temp.extend(a)
+#                     if temp.count('W')<=1 or temp.count('B')<=1:
+#                         return True
+#         return False 
+
+# Input: 
+# s = "abcde"
+# goal = "cdeab"
+# k=[] 
+# for i in s: 
+#    k.append(i) 
+# print(k) 
+# x=[]
+# for i in range(len(s)):
+#     key=k[0]  
+#     for i in range(len(k)-1): 
+#         k[i]=k[i+1] 
+#     k[-1]=key 
+#     x.append("".join(k))
+# print(x) 
+# if goal in x: 
+#     print(True) 
+# else : 
+#     print(False)
+
+# Input:
+# a="}{{}}{{"
+# Output: 2 
+# l=[]
+# for i in a : 
+#     l.append(i) 
+# # print(l) 
+# count_open_brac=0
+# count_close_brac=0
+# for i in l: 
+#     if i == '{': 
+#         count_open_brac+=1  
+#     else : 
+#         count_close_brac+=1 
+# # print(count_open_brac) 
+# # print(count_close_brac) 
+
+# if count_open_brac < count_close_brac : 
+#    b= count_close_brac-count_open_brac 
+# elif count_open_brac> count_close_brac: 
+#     b=count_open_brac-count_close_brac  
+# else : 
+#     b=0  
+
+# if b==1: 
+#     print(1) 
+# else : 
+#     print(b//2) 
+ 
+ 
+#  stack_method    
+# stack =[] 
+# a="{{{{" 
+# for i in a : 
+#     if  i=='{': 
+#         stack.append(i) 
+# for i in stack: 
+#     if i=='}': 
+#         stack.pop()
+# print(stack)
+        
+
+def min_reversals_to_balance(a): 
+    if len(a) %2 !=0 : 
+        return -1    
+    
+    stack=[]
+    for i in a : 
+        if i =='{': 
+            stack.append(i)   
+        else : 
+            if stack and stack[-1] =='{':         
+                stack.pop() 
+            else : 
+                stack.append(i) 
+    
+    count_open_brack = count_close_brack = 0  
+    while stack:  
+        if stack.pop()=='{': 
+            count_open_brack+=1  
+        else : 
+            count_close_brack+=1  
+    return ( (count_open_brack+1)//2 + (count_close_brack+1)//2)
+      
+# Test cases
+print(min_reversals_to_balance("{{{{"))  # Expected Output: 2
+print(min_reversals_to_balance("}{{}}{{"))  # Expected Output: 1
+print(min_reversals_to_balance("{{}}"))  # Expected Output: 0
