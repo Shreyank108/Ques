@@ -2153,29 +2153,53 @@ s = "((()"
 # print(stack)
         
 
-def min_reversals_to_balance(a): 
-    if len(a) %2 !=0 : 
-        return -1    
+# def min_reversals_to_balance(a): 
+#     if len(a) %2 !=0 : 
+#         return -1    
     
-    stack=[]
-    for i in a : 
-        if i =='{': 
-            stack.append(i)   
-        else : 
-            if stack and stack[-1] =='{':         
-                stack.pop() 
-            else : 
-                stack.append(i) 
+#     stack=[]
+#     for i in a : 
+#         if i =='{': 
+#             stack.append(i)   
+#         else : 
+#             if stack and stack[-1] =='{':         
+#                 stack.pop() 
+#             else : 
+#                 stack.append(i) 
     
-    count_open_brack = count_close_brack = 0  
-    while stack:  
-        if stack.pop()=='{': 
-            count_open_brack+=1  
-        else : 
-            count_close_brack+=1  
-    return ( (count_open_brack+1)//2 + (count_close_brack+1)//2)
+#     count_open_brack = count_close_brack = 0  
+#     while stack:  
+#         if stack.pop()=='{': 
+#             count_open_brack+=1  
+#         else : 
+#             count_close_brack+=1  
+#     return ( (count_open_brack+1)//2 + (count_close_brack+1)//2)
       
-# Test cases
-print(min_reversals_to_balance("{{{{"))  # Expected Output: 2
-print(min_reversals_to_balance("}{{}}{{"))  # Expected Output: 1
-print(min_reversals_to_balance("{{}}"))  # Expected Output: 0
+# # Test cases
+# print(min_reversals_to_balance("{{{{"))  # Expected Output: 2
+# print(min_reversals_to_balance("}{{}}{{"))  # Expected Output: 1
+# print(min_reversals_to_balance("{{}}"))  # Expected Output: 0
+
+# Input:
+word = "aaaaaaaaaaaaaabb"
+# tput: "1a1b1c1d1e"
+l=[] 
+for i in word: 
+    l.append(i) 
+print(l) 
+p={}
+for i in l: 
+    if i in p: 
+        p[i]+=1 
+    else : 
+        p[i]=1  
+print(p) 
+c="" 
+for key,value in p.items():  
+    while value > 9: 
+        c+='9'+key   
+        value-=9 
+    if value > 0: 
+        c+=str(value)+key 
+print(c)  
+
