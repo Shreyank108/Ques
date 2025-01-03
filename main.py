@@ -2181,25 +2181,64 @@ s = "((()"
 # print(min_reversals_to_balance("{{}}"))  # Expected Output: 0
 
 # Input:
-word = "aaaaaaaaaaaaaabb"
-# tput: "1a1b1c1d1e"
-l=[] 
-for i in word: 
-    l.append(i) 
-print(l) 
-p={}
-for i in l: 
-    if i in p: 
-        p[i]+=1 
-    else : 
-        p[i]=1  
-print(p) 
-c="" 
-for key,value in p.items():  
-    while value > 9: 
-        c+='9'+key   
-        value-=9 
-    if value > 0: 
-        c+=str(value)+key 
-print(c)  
+# word = "aaaaaaaaaaaaaabb"
+# # tput: "1a1b1c1d1e"
+# l=[] 
+# for i in word: 
+#     l.append(i) 
+# print(l) 
+# p={}
+# for i in l: 
+#     if i in p: 
+#         p[i]+=1 
+#     else : 
+#         p[i]=1  
+# print(p) 
+# c="" 
+# for key,value in p.items():  
+#     while value > 9: 
+#         c+='9'+key   
+#         value-=9 
+#     if value > 0: 
+#         c+=str(value)+key 
+# print(c)  
+# l=[]
+# for i in range(10,30):
+#     count =0
+#     for j in range(2,i):  
+#         if i%j==0 : 
+#             count +=1 
+#     if count <1:  
+#         l.append(i) 
+# print(l)
+# mega_prime =[]
+# for i in l: 
+#     digits=[int(j) for j in str(i)] 
+#     if all(d in [2,3,5,7] for d in digits): 
+#         mega_prime.append(i)  
+# print(mega_prime)
 
+# def binary(l,p): 
+#   left=0 
+#   right= len(l)-1 
+#   while left<=right: 
+#       mid= (left+right)//2 
+#       if p== l[mid]: 
+#           return mid  
+#       elif p>l[mid]: 
+#           left=mid+1 
+#       else : 
+#           right=mid-1 
+#   return -1  
+# l=[1,2,3,4,5,6,7] 
+# p=int(input("enter number which u wanted to find")) 
+# print(binary(l,p))        
+
+[0,1,2]
+[1,0,1]
+grid = [[0,1,0],[1,0,1]] 
+for i in grid:  
+        for j in i: 
+             if i in i: 
+                     print(j.index(i)) 
+                     
