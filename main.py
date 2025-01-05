@@ -2234,11 +2234,14 @@ s = "((()"
 # p=int(input("enter number which u wanted to find")) 
 # print(binary(l,p))        
 
-[0,1,2]
-[1,0,1]
-grid = [[0,1,0],[1,0,1]] 
-for i in grid:  
-        for j in i: 
-             if i in i: 
-                     print(j.index(i)) 
+# [0,1,2]
+# [1,0,1]
+# grid = [[0,1,0],[1,0,1]] 
+# for i in grid:  
+#         for j in i: 
+#              if i in i: 
+#                      print(j.index(i)) 
                      
+class Solution:
+    def minOperations(self, nums: List[int], k: int) -> int:
+        return sum(n<k for n in nums)
