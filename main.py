@@ -2242,6 +2242,19 @@ s = "((()"
 #              if i in i: 
 #                      print(j.index(i)) 
                      
+# class Solution:
+#     def minOperations(self, nums: List[int], k: int) -> int:
+#         return sum(n<k for n in nums)
+
 class Solution:
-    def minOperations(self, nums: List[int], k: int) -> int:
-        return sum(n<k for n in nums)
+    def minimumOperations(self, grid: List[List[int]]) -> int:
+        result=0
+        for i in range(1,len(grid)):
+            for j in range(len(grid[0])):
+                if grid[i][j]<=grid[i-1][j]:
+                    value=grid[i-1][j]-grid[i][j]+1
+                    result+=value
+                    grid[i][j]+=value
+        return result
+            
+        
