@@ -2246,15 +2246,23 @@ s = "((()"
 #     def minOperations(self, nums: List[int], k: int) -> int:
 #         return sum(n<k for n in nums)
 
-class Solution:
-    def minimumOperations(self, grid: List[List[int]]) -> int:
-        result=0
-        for i in range(1,len(grid)):
-            for j in range(len(grid[0])):
-                if grid[i][j]<=grid[i-1][j]:
-                    value=grid[i-1][j]-grid[i][j]+1
-                    result+=value
-                    grid[i][j]+=value
-        return result
+# class Solution:
+#     def minimumOperations(self, grid: List[List[int]]) -> int:
+#         result=0
+#         for i in range(1,len(grid)):
+#             for j in range(len(grid[0])):
+#                 if grid[i][j]<=grid[i-1][j]:
+#                     value=grid[i-1][j]-grid[i][j]+1
+#                     result+=value
+#                     grid[i][j]+=value
+#         return result
             
+class Solution:
+    def hasMatch(self, string: str, pattern: str) -> bool:
+        left_part, right_part = pattern.split('*')
+
+        left_idx = string.find(left_part)
+        right_idx = string.find(right_part, left_idx + len(left_part))
+
+        return left_idx != -1 and right_idx != -1
         
