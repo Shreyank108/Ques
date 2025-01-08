@@ -2257,12 +2257,27 @@ s = "((()"
 #                     grid[i][j]+=value
 #         return result
             
-class Solution:
-    def hasMatch(self, string: str, pattern: str) -> bool:
-        left_part, right_part = pattern.split('*')
+# class Solution:
+#     def hasMatch(self, string: str, pattern: str) -> bool:
+#         left_part, right_part = pattern.split('*')
 
-        left_idx = string.find(left_part)
-        right_idx = string.find(right_part, left_idx + len(left_part))
+#         left_idx = string.find(left_part)
+#         right_idx = string.find(right_part, left_idx + len(left_part))
 
-        return left_idx != -1 and right_idx != -1
+#         return left_idx != -1 and right_idx != -1
         
+        class Solution:
+    def countPrefixSuffixPairs(self, words: List[str]) -> int:
+        n = len(words)
+        ans = 0
+        for i in range(n):
+            s1 = words[i]
+            for j in range(i + 1, n):
+                s2 = words[j]
+                if len(s2) < len(s1):
+                    continue
+                pre = s2[:len(s1)]
+                suf = s2[-len(s1):]
+                if pre == s1 and suf == s1:
+                    ans += 1
+        return ans
