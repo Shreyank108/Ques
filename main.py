@@ -2289,30 +2289,50 @@ s = "((()"
         #         count += 1
         # return count
         
-class Solution:
-    def wordSubsets(self, words1: List[str], words2: List[str]) -> List[str]:
-        maxCharFreq = [0] * 26
-        tempCharFreq = [0] * 26
+# class Solution:
+#     def wordSubsets(self, words1: List[str], words2: List[str]) -> List[str]:
+#         maxCharFreq = [0] * 26
+#         tempCharFreq = [0] * 26
 
-        for word in words2:
-            for ch in word:
-                tempCharFreq[ord(ch) - ord('a')] += 1
-            for i in range(26):
-                maxCharFreq[i] = max(maxCharFreq[i], tempCharFreq[i])
-            tempCharFreq = [0] * 26
+#         for word in words2:
+#             for ch in word:
+#                 tempCharFreq[ord(ch) - ord('a')] += 1
+#             for i in range(26):
+#                 maxCharFreq[i] = max(maxCharFreq[i], tempCharFreq[i])
+#             tempCharFreq = [0] * 26
 
-        universalWords = []
+#         universalWords = []
 
-        for word in words1:
-            for ch in word:
-                tempCharFreq[ord(ch) - ord('a')] += 1
-            isUniversal = True
-            for i in range(26):
-                if maxCharFreq[i] > tempCharFreq[i]:
-                    isUniversal = False
-                    break
-            if isUniversal:
-                universalWords.append(word)
-            tempCharFreq = [0] * 26
+#         for word in words1:
+#             for ch in word:
+#                 tempCharFreq[ord(ch) - ord('a')] += 1
+#             isUniversal = True
+#             for i in range(26):
+#                 if maxCharFreq[i] > tempCharFreq[i]:
+#                     isUniversal = False
+#                     break
+#             if isUniversal:
+#                 universalWords.append(word)
+#             tempCharFreq = [0] * 26
 
-        return universalWords
+#         return universalWords
+
+# class Solution:
+#     def canConstruct(self, s: str, k: int) -> bool:
+#         if len(s) < k:
+#             return False
+#         sorted_s = sorted(s)
+        
+#         odd_count = 0
+#         i = 0
+        
+#         while i < len(sorted_s):
+#             char = sorted_s[i]
+#             count = 0
+#             while i < len(sorted_s) and sorted_s[i] == char:
+#                 count += 1
+#                 i += 1
+#             if count % 2 == 1:
+#                 odd_count += 1
+        
+#         return odd_count <= k
