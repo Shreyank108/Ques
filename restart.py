@@ -107,4 +107,45 @@
 # else : 
 #     print("Not a prime number") 
      
-number = 234   
+# number = 111   
+# m = str(number) 
+# k=m[::-1] 
+# if number == int(k): 
+#     print("pallindrome") 
+# else : 
+#     print("Not a Pallindrome")   
+
+# n= 153
+# sum =0    
+# for i in str(n): 
+#     sum+=int(i)**3  
+# print(sum) 
+
+# n= 145  
+ 
+# sum =0  
+# for i in str(n):
+#     fact =1 
+    
+#     for j in range(1,int(i)+1): 
+#         fact*=j  
+#     sum+=fact  
+# print(sum) 
+
+
+# number = 24
+# sum_of_digit =0     
+# for i in str(number): 
+#     sum_of_digit+=int(i)  
+# print(sum_of_digit)
+# if number % sum_of_digit ==0 : 
+#     print("Harshad number") 
+# else : 
+#     print("Not an Harshad number")
+
+# n= 5  
+# for i in range(3): 
+#     n =n*n  
+# print(n)
+
+
