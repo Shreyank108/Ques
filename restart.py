@@ -148,4 +148,5 @@
 #     n =n*n  
 # print(n)
 
+# noting to solve today 
 
