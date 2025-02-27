@@ -150,3 +150,165 @@
 
 # noting to solve today 
 
+# String  
+# a= "shreyank" 
+# b= "Agrawal" 
+# print(a==b) 
+
+# a="3" 
+# b="5" 
+# print(a+b)
+
+# a="Shreyank" 
+# print(len(a))
+
+# a="shreyank" 
+# print(a.capitalize()) 
+
+# a="shreyank" 
+# b="Agrawal" 
+# c=a.join(b)
+# print(c) 
+
+# a="shReyAnk"
+# c="" 
+# for i in a : 
+#     if i.islower(): 
+#         c+=i   
+# for i in a : 
+#     if i.isupper(): 
+#         c+=i    
+# print(c)     
+
+# str1 = "P@#yn26at^&i5ve"
+# countlower =0   
+# countupper=0  
+# countspecial=0  
+# for i in str1: 
+#     if i.isalpha(): 
+#         countlower+=1   
+#     elif i.isnumeric(): 
+#         countupper+=1  
+#     else : 
+#         countspecial+=1  
+# print(countlower,countupper,countspecial)
+
+# a="P@#yn26at" 
+# c="" 
+# for i in range(len(a)-1,-1,-1): 
+#     c+=a[i] 
+# print(c)
+
+#List  
+# n=int(input("Enter a range u want to genrate "))
+# l=[] 
+# for i in range(n): 
+#     x=int(input("Enter elements")) 
+#     l.append(x) 
+# print(l)
+
+# l=[1,2,3,5,7,6]
+# sum=0    
+# for i in l: 
+#     sum+=i   
+# print(sum) 
+# max = l[0]
+# for i in range(len(l)): 
+#     if l[i]> max : 
+#         max = l[i] 
+# print(max)
+
+# a="jatin" 
+# for i in range(len(a)): 
+#     print(i)   
+
+# l=[2,5,4,3,67,78,45,69] 
+# first = float("-inf") 
+# second = float("-inf")   
+# for i in l: 
+#     if i> first : 
+#         second, first = first , i     
+#     elif first > i > second :  
+#         second = i   
+# print(second)
+
+
+
+
+
+
+
+# def IsSorted(l): 
+#     for i in range(len(l)-1): 
+#         if l[i]> l[i+1]: 
+#             return False                       
+#     return True
+# l=[1,2,3,4,5,6]  
+# print(IsSorted(l))
+
+# a=0   
+# b=1  
+# for i in range(10): 
+#     c=a+b   
+#     b=a   
+#     a=c   
+#     print(c) 
+
+
+
+# def IsPallindrome(l): 
+#     start = 0  
+#     end =len(l)-1  
+#     while start < end : 
+#         if l[start] != l[end]   : 
+#             return False       
+#         start +=1  
+#         end -=1    
+#     return True  
+    
+# l=[1,2,3,2,1] 
+# print(IsPallindrome(l)) 
+
+# l=[1,2,3,4,5,6] 
+# n= int(input("Enter a number"))
+# # [2,3,4,5,6,1] 
+# for i in range(n):
+#     left = l[len(l)-1]
+#     for i in range(len(l)-1,0,-1): 
+#         l[i] = l[i-1]  
+#     l[0] = left 
+
+# print(l)
+# def linear_Search(l,n): 
+#     for i in range(len(l)-1): 
+#         if l[i] == n: 
+#             return i     
+#     return -1  
+# l=[1,2,3,4,5,6] 
+# n=int(input("Enter a Number which u want to search ")) 
+# print(linear_Search(l,n)) 
+
+# def BinarySearch(l,n): 
+#     left = 0   
+#     right = len(l)-1   
+#     while left <= right:  
+#         mid = (left+right) //2     
+#         if l[mid] == n: 
+#             return mid    
+#         elif l[mid]< n: 
+#             left = mid+1   
+#         else : 
+#             right = mid -1   
+#     return -1 
+        
+
+# l=[1,2,3,4,5,6] 
+# n= int(input("enter a Number which u want to search ")) 
+# print(BinarySearch(l,n,))
+
+
+
+
+l=[100,2,34,4,52,6]  
+bubblesort(l) 
+print(l)
