@@ -306,9 +306,31 @@
 # n= int(input("enter a Number which u want to search ")) 
 # print(BinarySearch(l,n,))
 
+# def bubblesort(l): 
+#     n= len(l) 
+#     for i in range (n): 
+#         swapped = False     
+#         for j in range(n-i-1): 
+#             if l[j]> l[j+1]: 
+#                 l[j],l[j+1]= l[j+1],l[j] 
+#                 swapped = True 
+#         if not swapped: 
+#             break     
 
+# l=[100,2,3,56,34,200] 
+# bubblesort(l)
+# print(l) 
 
+# Input: 
+# nums = [3,3]
+# target = 6
+# l=[]
+# # Output: [1,2] 
+# for i in range(len(nums)-1): 
+#     for j in range(1,len(nums)): 
+#         if (nums[i]+nums[j])== target:  
+#             l.append(i) 
+#             l.append(j) 
+# print(l)
 
-l=[100,2,34,4,52,6]  
-bubblesort(l) 
-print(l)
+Hello World! 123 @2025
