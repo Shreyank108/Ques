@@ -333,4 +333,104 @@
 #             l.append(j) 
 # print(l)
 
-Hello World! 123 @2025
+# s="Hello World! 123 @2025" 
+# s=s.replace(' ',"")
+# print(s) 
+# k=""
+# for i in s : 
+#     if i.isnumeric(): 
+#         pass                   
+#     elif i.isalpha(): 
+#         pass              
+#     else : 
+#         k+=i                
+# print(len(k))     
+# print(k)    
+
+# s=[1,2,2,3,3,3,4,4,5,54,23,23,435,4,665,7]
+# p={} 
+# for i in s : 
+#     if i in p: 
+#         p[i]+=1  
+#     else : 
+#         p[i]=1  
+# print(p)
+
+# String1 = "abacaba"
+# String2 = "abc" 
+# count =[]
+# l=[]
+# for i in String1: 
+#     l.append(i)
+# print(l)
+# for i in  l: 
+#     if i in String2: 
+#         count.append(i) 
+# print(count)
+# p={}
+# for i in count: 
+#     if i in p: 
+#         p[i]+=1   
+#     else : 
+#         p[i]=1   
+# print(p)
+# sum= 0
+# for key,value in p.items(): 
+#     sum+=value    
+# print(sum)
+
+matrix = [[0,1,2,0],[3,4,5,2],[1,3,1,5]]
+# Output: [[0,0,0,0],[0,4,5,0],[0,3,1,0]]
+
+# kolcata=0
+# for i in range(len(matrix)): 
+#         if 0 in matrix[i]: 
+#           kolcata=i
+#           matrix[i]=[0]*len(matrix[i]) 
+# for i in matrix: 
+#     i[kolcata]=0
+        
+# print(matrix)
+ 
+# rows = len(matrix)
+# cols = len(matrix[0])
+
+# # Step 1: Pehle row aur column mark kar lo jaha 0 hai
+# zero_rows = set()
+# zero_cols = set()
+
+# for i in range(rows):
+#     for j in range(cols):
+#         if matrix[i][j] == 0:
+#             zero_rows.add(i)
+#             zero_cols.add(j)
+
+# # Step 2: Rows aur columns ko zero karo
+# for i in range(rows):
+#     for j in range(cols):
+#         if i in zero_rows or j in zero_cols:
+#             matrix[i][j] = 0
+# print(matrix)
+
+matrix = [
+    [1, 1, 1],
+    [1, 0, 1],
+    [1, 1, 1]
+]
+
+row = len(matrix) 
+col = len(matrix[0]) 
+
+row_zero = set() 
+col_zero = set()   
+
+for  i in range(row):  
+    for j in range(col): 
+        if matrix[i][j] == 0: 
+            row_zero.add(i) 
+            col_zero.add(j)    
+for i in range(row): 
+    for j in range(col): 
+        if i in row_zero or j in col_zero : 
+            matrix[i][j] =0    
+print(matrix)
