@@ -34,4 +34,67 @@
 '''
 # Type 1   -   which element exists  row 5 col -3 
 # formula is ncr  [Combinations ] 
-n=int("input") 
+# def factorial(n): 
+#     if n ==1 or n ==0  : 
+#         return 1  
+#     result =1   
+#     for i in range(2,n+1): 
+#         result *=i               
+#     return result   
+
+# def ncr(row,col): 
+#      return factorial(row)// (factorial(col)*factorial(row-col)) 
+
+# row=5   
+# col=3
+# print(ncr(row-1,col-1))
+
+# Type -2    - print whole column  of Triangle     
+
+# def facto(n): 
+#     if n ==0 or n ==1  : 
+#         return 1   
+#     result =1  
+#     for i in range(2,n+1): 
+#         result *=i   
+#     return result   
+
+# def ncr(row,col ): 
+#     return facto(row)//(facto(col)*facto(row-col)) 
+
+# def PrintWholeCol(row): 
+#     row= row-1 
+#     for col in range(row+1): 
+#         print(ncr(row,col), end=" ") 
+#     print() 
+
+# row=3    
+# print(PrintWholeCol(row))
+    
+# Type 3 - where we have to print whole triangle     
+
+# def facto (n): 
+#     if n ==0 or n==1  : 
+#         return 1   
+#     result =1    
+#     for i in range(2,n+1): 
+#         result *=i     
+#     return result    
+
+# def ncr (row, col): 
+#     return facto(row)//(facto(col)*facto(row-col)) 
+
+# def PrintFullTriangle(rows): 
+#     triangle  =[]
+#     for row in range(rows): 
+#         current_col=[] 
+#         for col in range(row+1 ): 
+#             current_col.append(ncr(row,col))
+#         triangle.append(current_col) 
+#     return triangle
+
+# row =5  
+# print(PrintFullTriangle(row)) 
+
+
+# --------------------------------------------------------  
