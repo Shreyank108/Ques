@@ -447,3 +447,10 @@ matrix = [[0,1,2,0],[3,4,5,2],[1,3,1,5]]
    1  5  10 10  5 1
 '''
 # Type 1   -   which element exists  row 5 col -3
+
+
+
+from math import log10
+num =34232  
+count = log10(num)+1   
+print(count)
