@@ -130,4 +130,4 @@ def maxSubArray(self, nums: List[int]) -> int:
             maximum = sumation   
         if sumation < 0: 
             sumation =0   
-    return maximum
+    return maximu
