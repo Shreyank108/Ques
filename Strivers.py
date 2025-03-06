@@ -118,16 +118,29 @@
     # nums[i + 1:] = reversed(nums[i + 1:])
 
 
-def maxSubArray(self, nums: List[int]) -> int:
-    sumation = 0   
-    n= len(nums) 
-    maximum = float("-inf") 
-    for i in range(0,n):  
-        sumation += nums[i]
-        if nums[i] > maximum : 
-            maximum= nums[i] 
-        if sumation > maximum:  
-            maximum = sumation   
-        if sumation < 0: 
-            sumation =0   
-    return maximu
+# def maxSubArray(self, nums: List[int]) -> int:
+#     sumation = 0   
+#     n= len(nums) 
+#     maximum = float("-inf") 
+#     for i in range(0,n):  
+#         sumation += nums[i]
+#         if nums[i] > maximum : 
+#             maximum= nums[i] 
+#         if sumation > maximum:  
+#             maximum = sumation   
+#         if sumation < 0: 
+#             sumation =0   
+#     return maximu
+
+# Input: 
+matrix = [[1,2,3],[4,5,6],[7,8,9]]
+# Output: [[7,4,1],[8,5,2],[9,6,3]] 
+
+for i in range(len(matrix)): 
+    for j in range(i+1,len(matrix)): 
+        matrix[i][j],matrix[j][i] = matrix[j][i],matrix[i][j] 
+
+for i in matrix: 
+    i.reverse()
+    
+print(matrix)
