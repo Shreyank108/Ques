@@ -180,4 +180,13 @@
 # nums2.sort()  
 # nums1.extend(nums2) 
 # nums1.sort() 
-# print(nums1)
+# print(nums1) 
+
+nums = [1,2,3] 
+count = 0   
+pairs = [] 
+for i in range(len(nums)) : 
+    pair = (nums[i], nums[(i+1)%len(nums)]) 
+    pairs.append(pair) 
+print(pairs) 
+print(len(pairs))
