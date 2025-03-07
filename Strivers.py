@@ -133,14 +133,51 @@
 #     return maximu
 
 # Input: 
-matrix = [[1,2,3],[4,5,6],[7,8,9]]
-# Output: [[7,4,1],[8,5,2],[9,6,3]] 
+# matrix = [[1,2,3],[4,5,6],[7,8,9]]
+# # Output: [[7,4,1],[8,5,2],[9,6,3]] 
 
-for i in range(len(matrix)): 
-    for j in range(i+1,len(matrix)): 
-        matrix[i][j],matrix[j][i] = matrix[j][i],matrix[i][j] 
+# for i in range(len(matrix)): 
+#     for j in range(i+1,len(matrix)): 
+#         matrix[i][j],matrix[j][i] = matrix[j][i],matrix[i][j] 
 
-for i in matrix: 
-    i.reverse()
+# for i in matrix: 
+#     i.reverse()
     
-print(matrix)
+# print(matrix)
+
+
+nums1 = [1,2,3,0,0,0]
+m = 3
+nums2 = [2,5,6]
+n = 3 
+for i in range(len(nums1)):
+    if 0 in nums1 : 
+        nums1.remove(0) 
+for i in range(len(nums2)):
+    if 0 in nums2 : 
+        nums1.remove(0) 
+p=0 
+if len(nums1) == m : 
+    pass  
+else : 
+    if len(nums1)> m: 
+        p= nums1-m  
+    else : 
+        p= m- nums1
+    for i in range(p):
+        nums1.append(0) 
+nums1.sort()  
+p1=0 
+if len(nums2) == n : 
+    pass  
+else : 
+    if len(nums2)> n: 
+        p= nums2-n  
+    else : 
+        p= n- nums2
+    for i in range(p):
+        nums2.append(0) 
+nums2.sort()  
+nums1.extend(nums2) 
+nums1.sort() 
+print(nums1)
