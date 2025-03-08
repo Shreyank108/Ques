@@ -182,11 +182,27 @@
 # nums1.sort() 
 # print(nums1) 
 
-nums = [1,2,3] 
-count = 0   
-pairs = [] 
-for i in range(len(nums)) : 
-    pair = (nums[i], nums[(i+1)%len(nums)]) 
-    pairs.append(pair) 
-print(pairs) 
-print(len(pairs))
+# nums = [1,2,3] 
+# count = 0   
+# pairs = [] 
+# for i in range(len(nums)) : 
+#     pair = (nums[i], nums[(i+1)%len(nums)]) 
+#     pairs.append(pair) 
+# print(pairs) 
+# print(len(pairs))
+
+
+matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]]
+target = 3
+# Output: true 
+m=[]
+for i in matrix :
+    for j in i : 
+        m.append(j)
+for i in m: 
+    if i == target: 
+        print(True) 
+        break
+    else : 
+        print(False )                     
+print(m)
